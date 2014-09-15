@@ -1,0 +1,16 @@
+{
+  "name": "VCU",
+  "version": "0.0.1",
+  "dependencies": {
+    "bootstrap-sass": "latest",
+    "modernizr": "latest",
+    "normalize-css": "latest",
+    "picturefill": "latest",
+    "jquery": "latest",
+    "font-awesome": "~4.2.0",
+    "respond": "~1.4.2"
+  },
+  "devDependencies": {
+    "font-awesome": "~4.2.0"
+  }
+}

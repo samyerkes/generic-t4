@@ -1,0 +1,15 @@
+.sidebar
+  li
+    width: 100%
+    border-top: 1px solid #eeeeee
+    list-style: none
+  a
+    display: block
+    padding: 15px 0 15px 15px
+    &:hover, &:focus
+      background: #eeeeee
+      text-decoration: none
+  ul ul
+    @extend %nospace
+    li a
+      padding: 10px 10px 10px 50px

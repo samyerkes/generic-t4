@@ -1,0 +1,24 @@
+*
+	@extend %nospace
+	box-sizing: border-box
+html
+	position: relative
+	width: 100%
+	min-height: 100%
+	background: $background-color
+	color: $font-color
+body
+	margin: 0 0 ($pad+50px) //50px is to clear the sticky "make it real" footer
+.wrap
+	margin: $pad auto $pad*3 //*3 is to clear the sticky "make it real" footer
+	width: 90%
+	max-width: 960px
+	padding: $pad
+	background: $white
+img
+	width: 100% !important
+	height: auto !important
+.module
+	padding: $pad
+.module-sm
+	padding: $pad-sm

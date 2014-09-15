@@ -1,0 +1,22 @@
+[
+          {"from":"../imgs/identity/body-bg-600.gif" , "to":"<t4 type='media' id='105259' formatter='path/*'/>"},
+          {"from":"../imgs/identity/body-bg-768.gif" , "to":"<t4 type='media' id='105260' formatter='path/*'/>"},
+          {"from":"../imgs/identity/body-bg-sm.gif" , "to":"<t4 type='media' id='105261' formatter='path/*'/>"},
+          {"from":"../imgs/identity/body-bg.gif" , "to":"<t4 type='media' id='105262' formatter='path/*'/>"},
+          {"from":"../imgs/identity/makeitreal-600.gif" , "to":"<t4 type='media' id='105263' formatter='path/*'/>"},
+          {"from":"../imgs/identity/makeitreal.gif" , "to":"<t4 type='media' id='105264' formatter='path/*'/>"},
+          {"from":"../imgs/identity/makeitrealFooter.gif" , "to":"<t4 type='media' id='105265' formatter='path/*'/>"},
+          {"from":"../imgs/identity/vcubar-footer.gif" , "to":"<t4 type='media' id='105266' formatter='path/*'/>"},
+          {"from":"../imgs/identity/vcubrand-600.gif" , "to":"<t4 type='media' id='105267' formatter='path/*'/>"},
+          {"from":"../imgs/identity/vcubrand-768.gif" , "to":"<t4 type='media' id='105268' formatter='path/*'/>"},
+          {"from":"../imgs/identity/vcubrand.gif" , "to":"<t4 type='media' id='105269' formatter='path/*'/>"},
+          {"from":"../imgs/identity/vcuseal.gif" , "to":"<t4 type='media' id='105270' formatter='path/*'/>"},
+          {"from":"../fonts/fontawesome-webfont.eot" , "to":"<t4 type='media' id='105271' formatter='path/*'/>"},
+          {"from":"../fonts/fontawesome-webfont.woff" , "to":"<t4 type='media' id='105272' formatter='path/*'/>"},
+          {"from":"../fonts/fontawesome-webfont.ttf" , "to":"<t4 type='media' id='105273' formatter='path/*'/>"},
+          {"from":"../fonts/fontawesome-webfont.svg" , "to":"<t4 type='media' id='105274' formatter='path/*'/>"},
+          {"from":"../fonts/glyphicons-halflings-regular.eot" , "to":"<t4 type='media' id='105276' formatter='path/*'/>"},
+          {"from":"../fonts/glyphicons-halflings-regular.svg" , "to":"<t4 type='media' id='105277' formatter='path/*'/>"},
+          {"from":"../fonts/glyphicons-halflings-regular.ttf" , "to":"<t4 type='media' id='105278' formatter='path/*'/>"},
+          {"from":"../fonts/glyphicons-halflings-regular.woff" , "to":"<t4 type='media' id='105279' formatter='path/*'/>"}
+]

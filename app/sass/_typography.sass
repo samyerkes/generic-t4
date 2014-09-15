@@ -1,0 +1,28 @@
+html
+	font-size: 18px
+body
+	font-family: $serif
+h1, h2, h3, p, ul, ol
+	margin: 0 0 $pad-sm
+p, ul, ol
+	@include font-size(1)
+ul
+	padding: 0 0 0 $pad*2
+	@media screen and (max-width: $babybear)
+		padding: 0 0 0 $pad
+	&.social
+		padding: 0
+		li
+			display: inline
+			list-style: none
+			margin-left: $pad-sm
+a
+	color: $links
+	&:hover, &:focus
+		color: $links-hover
+pre
+	margin: $pad-sm 0
+	padding: $pad-sm
+	border: 1px solid $vcu-identity
+	background: $gray
+	color: $black

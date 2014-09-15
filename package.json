@@ -1,0 +1,31 @@
+{
+  "name": "T4Dev",
+  "version": "0.1.0",
+  "description": "A sample project to help VCU web developers get started with effectively for TerminalFour",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Sam Yerkes",
+  "license": "BSD-2-Clause",
+  "devDependencies": {
+    "grunt": "latest",
+    "grunt-autoprefixer": "latest",
+    "grunt-bower-task": "latest",
+    "grunt-contrib-concat": "latest",
+    "grunt-contrib-copy": "latest",
+    "grunt-contrib-sass": "latest",
+    "grunt-combine-media-queries": "latest",
+    "grunt-contrib-uglify": "latest",
+    "grunt-contrib-watch": "latest",
+    "grunt-contrib-compass": "latest",
+    "grunt-contrib-cssmin": "latest",
+    "grunt-contrib-imagemin": "latest",
+    "grunt-html-validation": "latest",
+    "grunt-include-replace": "latest",
+    "grunt-sails-linker": "latest",
+    "grunt-text-replace": "latest",
+    "grunt-usemin": "latest",
+    "grunt-wiredep": "latest"
+  }
+}
