@@ -18,5 +18,6 @@
           {"from":"../fonts/glyphicons-halflings-regular.eot" , "to":"<t4 type='media' id='105276' formatter='path/*'/>"},
           {"from":"../fonts/glyphicons-halflings-regular.svg" , "to":"<t4 type='media' id='105277' formatter='path/*'/>"},
           {"from":"../fonts/glyphicons-halflings-regular.ttf" , "to":"<t4 type='media' id='105278' formatter='path/*'/>"},
-          {"from":"../fonts/glyphicons-halflings-regular.woff" , "to":"<t4 type='media' id='105279' formatter='path/*'/>"}
+          {"from":"../fonts/glyphicons-halflings-regular.woff" , "to":"<t4 type='media' id='105279' formatter='path/*'/>"},
+          {"from":"../imgs/pencil.gif" , "to":"<t4 type='media' id='105334' formatter='path/*'/>"}
 ]

@@ -8,7 +8,8 @@
     "picturefill": "latest",
     "jquery": "latest",
     "font-awesome": "~4.2.0",
-    "respond": "~1.4.2"
+    "respond": "~1.4.2",
+    "fitvids": "~1.1.0"
   },
   "devDependencies": {
     "font-awesome": "~4.2.0"
