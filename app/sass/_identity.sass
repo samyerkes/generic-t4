@@ -9,14 +9,54 @@ body
 article, aside, details, figcaption, figure, footer, header, menu, nav, section, video
 	display: block
 
+#vcuIdentityWrapper
+	&.identity-white
+		background:
+			color: $vcu-identity-white
+			image: url(../imgs/identity/white/body-bg.gif) repeat-x top
+		#vcuIdentity
+			background-color: $vcu-identity-white
+			h1 a
+				background: url(../imgs/identity/white/vcubrand.gif) no-repeat
+			h2 a
+				background: url(../imgs/identity/white/makeitreal.gif) no-repeat
+	&.identity-gray
+		background:
+			color: $vcu-identity-gray
+			image: url(../imgs/identity/gray/body-bg.gif) repeat-x top
+		#vcuIdentity
+			background-color: $vcu-identity-gray
+			h1 a
+				background: url(../imgs/identity/gray/vcubrand.gif) no-repeat
+			h2 a
+				background: url(../imgs/identity/gray/makeitreal.gif) no-repeat
+	&.identity-black
+		background:
+			color: $vcu-identity-black
+			image: url(../imgs/identity/black/body-bg.gif) repeat-x top
+		#vcuIdentity
+			background-color: $vcu-identity-black
+			h1 a
+				background: url(../imgs/identity/black/vcubrand.gif) no-repeat
+			h2 a
+				background: url(../imgs/identity/black/makeitreal.gif) no-repeat
+	&.identity-gold
+		background:
+			color: $vcu-identity-gold
+			image: url(../imgs/identity/gold/body-bg.gif) repeat-x top
+		#vcuIdentity
+			background-color: $vcu-identity-gold
+			h1 a
+				background: url(../imgs/identity/gold/vcubrand.gif) no-repeat
+			h2 a
+				background: url(../imgs/identity/gold/makeitreal.gif) no-repeat
+
+
 // Layout
 #vcuIdentityWrapper
 	display: block
 	height: 60px
 	@extend %nospace
-	background:
-		color: $vcu-identity
-		image: url(../imgs/identity/body-bg.gif) repeat-x top
 	text-align: left
 #vcuIdentity
 	width: 100%
@@ -24,7 +64,6 @@ article, aside, details, figcaption, figure, footer, header, menu, nav, section,
 	height: 54px
 	margin: 0 auto
 	padding: 0
-	background-color: $vcu-identity
 	header
 		width: 100%
 		max-width: 960px
@@ -107,12 +146,26 @@ article, aside, details, figcaption, figure, footer, header, menu, nav, section,
 @media screen and (max-width: 995px)
 	#vcuIdentityWrapper
 		height: 54px !important
-		background: white url(../imgs/identity/body-bg-768.gif) repeat-x top !important
+		&.identity-white
+			background: $vcu-identity-white url(../imgs/identity/white/body-bg-768.gif) repeat-x top !important
+			#vcuIdentity h1 a
+				background: url(../imgs/identity/white/vcubrand-768.gif) no-repeat !important
+		&.identity-gray
+			background: $vcu-identity-gray url(../imgs/identity/gray/body-bg-768.gif) repeat-x top !important
+			#vcuIdentity h1 a
+				background: url(../imgs/identity/gray/vcubrand-768.gif) no-repeat !important
+		&.identity-black
+			background: $vcu-identity-black url(../imgs/identity/black/body-bg-768.gif) repeat-x top !important
+			#vcuIdentity h1 a
+				background: url(../imgs/identity/black/vcubrand-768.gif) no-repeat !important
+		&.identity-gold
+			background: $vcu-identity-gold url(../imgs/identity/gold/body-bg-768.gif) repeat-x top !important
+			#vcuIdentity h1 a
+				background: url(../imgs/identity/gold/vcubrand-768.gif) no-repeat !important
 	#vcuIdentity
 		max-width: 840px !important
 		h1 a
 			width: 659px !important
-			background: url(../imgs/identity/vcubrand-768.gif) no-repeat !important
 		h2 a
 			margin-top: -41px !important
 
@@ -121,7 +174,34 @@ article, aside, details, figcaption, figure, footer, header, menu, nav, section,
 		background-position: 0 48px !important
 	#vcuIdentityWrapper
 		height: 48px
-		background: white url(../imgs/identity/body-bg-600.gif) repeat-x top
+		&.identity-white
+			background: $vcu-identity-white url(../imgs/identity/white/body-bg-600.gif) repeat-x top
+			#vcuIdentity
+				h1 a
+					background: url(../imgs/identity/white/vcubrand-600.gif) no-repeat !important
+				h2 a
+					background: url(../imgs/identity/white/makeitreal-600.gif) no-repeat !important
+		&.identity-gray
+			background: $vcu-identity-gray url(../imgs/identity/gray/body-bg-600.gif) repeat-x top
+			#vcuIdentity
+				h1 a
+					background: url(../imgs/identity/gray/vcubrand-600.gif) no-repeat !important
+				h2 a
+					background: url(../imgs/identity/gray/makeitreal-600.gif) no-repeat !important
+		&.identity-black
+			background: $vcu-identity-black url(../imgs/identity/black/body-bg-600.gif) repeat-x top
+			#vcuIdentity
+				h1 a
+					background: url(../imgs/identity/black/vcubrand-600.gif) no-repeat !important
+				h2 a
+					background: url(../imgs/identity/black/makeitreal-600.gif) no-repeat !important
+		&.identity-gold
+			background: $vcu-identity-gold url(../imgs/identity/gold/body-bg-600.gif) repeat-x top
+			#vcuIdentity
+				h1 a
+					background: url(../imgs/identity/gold/vcubrand-600.gif) no-repeat !important
+				h2 a
+					background: url(../imgs/identity/gold/makeitreal-600.gif) no-repeat !important
 	#vcuIdentity
 		max-width: 670px !important
 		margin: 0 auto
@@ -130,13 +210,11 @@ article, aside, details, figcaption, figure, footer, header, menu, nav, section,
 		h1 a
 			width: 519px !important
 			border: 0 !important
-			background: url(../imgs/identity/vcubrand-600.gif) no-repeat !important
 			text-decoration: none !important
 		h2 a
 			width: 84px !important
 			height: 39px !important
 			margin-top: -46px !important
-			background: url(../imgs/identity/makeitreal-600.gif) no-repeat !important
 			border: 0 !important
 			text-decoration: none !important
 
@@ -154,7 +232,22 @@ article, aside, details, figcaption, figure, footer, header, menu, nav, section,
 		background-position: 0 35px !important
 	#vcuIdentityWrapper
 		height: 35px !important
-		background: white url(../imgs/identity/body-bg-sm.gif) repeat-x top !important
+		&.identity-white
+			background: $vcu-identity-white url(../imgs/identity/white/body-bg-sm.gif) repeat-x top !important
+			#vcuIdentity h1 a
+				background: url(../imgs/identity/white/vcuseal.gif) no-repeat !important
+		&.identity-gray
+			background: $vcu-identity-gray url(../imgs/identity/gray/body-bg-sm.gif) repeat-x top !important
+			#vcuIdentity h1 a
+				background: url(../imgs/identity/gray/vcuseal.gif) no-repeat !important
+		&.identity-black
+			background: $vcu-identity-black url(../imgs/identity/black/body-bg-sm.gif) repeat-x top !important
+			#vcuIdentity h1 a
+				background: url(../imgs/identity/black/vcuseal.gif) no-repeat !important
+		&.identity-gold
+			background: $vcu-identity-gold url(../imgs/identity/gold/body-bg-sm.gif) repeat-x top !important
+			#vcuIdentity h1 a
+				background: url(../imgs/identity/gold/vcuseal.gif) no-repeat !important
 	#vcuIdentity
 		height: 35px !important
 		header
@@ -163,7 +256,6 @@ article, aside, details, figcaption, figure, footer, header, menu, nav, section,
 			width: 99px !important
 			height: 35px !important
 			margin: 0 auto !important
-			background: url(../imgs/identity/vcuseal.gif) no-repeat !important
 			border: 0 !important
 			text-decoration: none !important
 		h2 a
