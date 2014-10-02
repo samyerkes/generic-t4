@@ -9,7 +9,7 @@ module.exports = function(grunt) {
         livereload: true
       },
       html: {
-        files: 'app/*.html',
+        files: 'app/**/*.html',
         tasks: ['build']
       },
       js: {
@@ -58,7 +58,7 @@ module.exports = function(grunt) {
         files: [{
           expand: true,
           cwd: 'app/imgs/',
-          src: ['**/*.{png,jpg,gif,svg,ico}'],
+          src: ['**/*.{png,jpg,gif,svg}'],
           dest: 'dist/imgs/'
         }]
       }
@@ -92,12 +92,6 @@ module.exports = function(grunt) {
         }
     },
     copy: {
-        dist: {
-            expand: true,
-            cwd: 'app/',
-            src: '*.html',
-            dest: 'dist/'
-        },
         jquery: {
             expand: true,
             cwd: 'app/bower_components/jquery/dist/',
@@ -116,6 +110,20 @@ module.exports = function(grunt) {
           dest: 't4/',
           expand: true
         }
+    },
+
+    includereplace: {
+      dist: {
+        options: {
+          prefix: '<!-- @',
+          suffix: ' -->',
+          includesDir: 'app/components/'
+        },
+        src: '*.html',
+        dest: 'dist/',
+        cwd: 'app/',
+        expand: 'true'
+      }
     },
 
     replace: {
@@ -139,6 +147,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-html-validation');
+  grunt.loadNpmTasks('grunt-include-replace');
   grunt.loadNpmTasks('grunt-text-replace');
   grunt.loadNpmTasks('grunt-usemin');
   grunt.loadNpmTasks('grunt-wiredep');
@@ -150,7 +159,7 @@ grunt.registerTask('replace-t4', function() {
 });
 
 //Build the initial directories
-grunt.registerTask('build', ['wiredep', 'copy', 'sass', 'autoprefixer', 'imagemin', 'useminPrepare', 'concat', 'cssmin', 'uglify', 'usemin', 't4', 'watch']);
+grunt.registerTask('build', ['wiredep', 'includereplace', 'copy', 'sass', 'autoprefixer', 'imagemin', 'useminPrepare', 'concat', 'cssmin', 'uglify', 'usemin', 't4', 'watch']);
 
 //Build T4 directory
 grunt.registerTask('t4', ['copy:t4', 'replace-t4']);

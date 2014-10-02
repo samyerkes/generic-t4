@@ -1,142 +1,146 @@
 <!doctype html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Massey Annual Report - Virginia Commonwealth University</title>
+    <title>Massey Annual Report - Virginia Commonwealth University</title>
 
-  <!-- build:css css/global.min.css -->
-  <!-- bower:css -->
-  <link rel="stylesheet" href="../bower_components/bootstrap-sass/dist/css/bootstrap.css" />
-  <link rel="stylesheet" href="../bower_components/normalize-css/normalize.css" />
-  <link rel="stylesheet" href="../bower_components/font-awesome/css/font-awesome.css" />
-  <!-- endbower -->
-  <link rel="stylesheet" href="css/global.css">
-  <!-- endbuild -->
-  <link rel="icon" href="imgs/favicon.ico" type="image/x-icon">
+    <!-- build:css css/global.min.css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="../bower_components/bootstrap-sass/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="../bower_components/normalize-css/normalize.css" />
+    <link rel="stylesheet" href="../bower_components/font-awesome/css/font-awesome.css" />
+    <!-- endbower -->
+    <link rel="stylesheet" href="css/global.css">
+    <!-- endbuild -->
+    <link rel="icon" href="imgs/favicon.ico" type="image/x-icon">
 
-  <script href="bower_components/modernizr/modernizr.js"></script>
+    <script href="bower_components/modernizr/modernizr.js"></script>
 </head>
-<body>
-    <div id="vcuIdentityWrapper" class="identity-gold">
-        <header id="vcuIdentity">
-            <h1><a title="Virginia Commonwealth University" target="_blank" href="http://www.vcu.edu">Virginia Commonwealth University</a></h1>
-            <h2><a title="VCU Make it real." target="_blank" href="http://www.makeitreal.vcu.edu">Make it real.</a></h2>
-        </header>
-    </div>
 
-    <div class="header container module">
-      <h1><a class="pull-left" href="http://www.massey.vcu.edu"><img src="http://placehold.it/200x100/56a5eb/ffffff/&text=200x100px" alt="Generic Department" /></a></h1>
-      <h2>Generic Department</h2>
-    </div>
+<body>
+    <!-- @include('vcu-identity.html') -->
+
+    <!-- @include('page-title.html') -->
 
     <div class="separator hidden-sm hidden-xs"></div>
 
     <nav class="navbar navbar-default hidden-lg hidden-med" role="navigation">
-      <div class="container">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-        </div>
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
 
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-          <ul class="nav navbar-nav">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Inspiring Stories</a></li>
-            <li><a href="#">Letter from the Director</a></li>
-            <li><a href="#">By the Numbers</a></li>
-            <li><a href="#">Virginia's Cancer Resource</a></li>
-          </ul>
-        </div><!-- /.navbar-collapse -->
-      </div><!-- /.container-fluid -->
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li><a href="#">Home</a>
+                    </li>
+                    <li><a href="#">Inspiring Stories</a>
+                    </li>
+                    <li><a href="#">Letter from the Director</a>
+                    </li>
+                    <li><a href="#">By the Numbers</a>
+                    </li>
+                    <li><a href="#">Virginia's Cancer Resource</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
     </nav>
 
     <div class="container content">
-      <div class="row">
-        <div class="col-md-9 col-md-push-3">
-          <ol class="breadcrumb">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Library</a></li>
-            <li class="active">Data</li>
-          </ol>
-          <h2>Page title</h2>
+        <div class="row">
+            <div class="col-md-9 col-md-push-3">
+               <ol class="breadcrumb">
+                    <li><a href="#">Home</a>
+                    </li>
+                    <li><a href="#">Library</a>
+                    </li>
+                    <li class="active">Data</li>
+                </ol>
+                <h2>Page title</h2>
 
-          <div class="video module-sm">
-            <iframe width="560" height="315" src="//www.youtube.com/embed/wRmA1FDO6-g" frameborder="0" allowfullscreen></iframe>
-          </div>
+                <!-- @include('jumbotron.html') -->
 
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil soluta cumque atque sunt assumenda repellendus quibusdam aut ducimus, a perferendis molestiae qui minima nam! Laboriosam veniam fugiat amet aperiam aspernatur, et consequatur cum, illum eligendi numquam. Ipsa nostrum doloremque, ab blanditiis pariatur perspiciatis iure optio quidem unde sequi nam labore placeat suscipit, repudiandae sapiente sint. Id vitae recusandae soluta pariatur, neque praesentium ut incidunt ad iusto et deserunt illo laborum mollitia a? Tempora enim, sint officia blanditiis id deleniti est consectetur rerum corrupti eveniet impedit expedita nesciunt ad porro nobis non. Id iusto ut dolore magnam velit, modi accusamus architecto.</p>
-          <p>Totam ad quo enim quaerat necessitatibus provident unde doloremque quos adipisci dolorum architecto voluptates tempore cupiditate, alias eum quisquam, perferendis tenetur laudantium! Veritatis, nostrum quo dolorem, odio tempore sed maiores illum atque excepturi adipisci dicta quasi, iusto suscipit quas. Nam qui nesciunt, deleniti quibusdam incidunt quae libero, earum animi sed atque corporis asperiores, consectetur beatae repellat deserunt in eligendi rem modi nemo doloribus, facere ad excepturi. Optio ab veniam doloribus totam, itaque distinctio deserunt quibusdam, tempora sequi iusto cupiditate voluptatem vitae enim, suscipit consequuntur assumenda reiciendis? Adipisci hic sequi error, necessitatibus accusamus omnis sed laborum cumque fuga. Dolores, deleniti, saepe?</p>
-          <p>A quibusdam, aliquam quis sit vitae officia aperiam ex reprehenderit dolores ab eaque nihil, id nostrum possimus eveniet amet. Quod rem dolorem minima sapiente rerum facilis aliquid modi magni animi at libero architecto sit, quas omnis commodi dignissimos facere voluptate quis quia fuga! Deleniti doloremque consectetur ex ipsum velit, reprehenderit placeat illum harum doloribus tempore nemo voluptate odit, incidunt ipsa minima. Aliquid autem, molestias ipsam fuga soluta eligendi accusamus. Vero, ad aperiam quia ex, impedit adipisci tempore ab quas, quaerat, debitis assumenda ullam. Sint, facilis, molestias in sequi mollitia, eaque earum nihil dolorem maiores voluptate modi necessitatibus quos iusto placeat.</p>
+                <!-- @include('general-content.html') -->
 
+            </div>
+            <div class="sidebar col-md-3 col-md-pull-9 hidden-xs hidden-sm">
+                <ul class="nav navbar-nav">
+                    <li><a href="#">Home</a>
+                    </li>
+                    <li><a href="#">Inspiring Stories</a>
+                    </li>
+                    <li><a href="#">Letter from the Director</a>
+                    </li>
+                    <li><a href="#">By the Numbers</a>
+                    </li>
+                    <li><a href="#">Virginia's Cancer Resource</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-        <div class="sidebar col-md-3 col-md-pull-9 hidden-xs hidden-sm">
-          <ul class="nav navbar-nav">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Inspiring Stories</a></li>
-            <li><a href="#">Letter from the Director</a></li>
-            <li><a href="#">By the Numbers</a></li>
-            <li><a href="#">Virginia's Cancer Resource</a></li>
-          </ul>
-        </div>
-      </div>
     </div>
 
     <footer>
-      <div class="container module">
-        <div class="row">
-          <div class="col-md-4">
-            <p><a href="http://www.vcu.edu" alt="Virginia Commonwealth University">Virgina Commonwealth University</a><br />
-            <a href="#" alt="Generic Department">Generic Department</a><br />
-            401 College Street, P.O. Box 980037 <br />
-            Richmond, Virginia 23298-0037</p>
-            <p>Last Updated: 09/11/2014 <br /></p>
-         </div>
+        <div class="container module">
+            <div class="row">
+                <div class="col-md-4">
+                    <p><a href="http://www.vcu.edu" alt="Virginia Commonwealth University">Virgina Commonwealth University</a>
+                        <br />
+                        <a href="#" alt="Generic Department">Generic Department</a>
+                        <br />401 College Street, P.O. Box 980037
+                        <br />Richmond, Virginia 23298-0037</p>
+                    <p>Last Updated: 09/11/2014
+                        <br />
+                    </p>
+                </div>
 
-         <div class="col-md-8">
-           <ul class="social">
-             <li><a href="#"><i class="fa fa-facebook fa-2x"></i></a></li>
-             <li><a href="#"><i class="fa fa-twitter fa-2x"></i></a></li>
-             <li><a href="#"><i class="fa fa-instagram fa-2x"></i></a></li>
-             <li><a href="#"><i class="fa fa-youtube fa-2x"></i></a></li>
-           </ul>
-         </div>
+                <div class="col-md-8">
+                    <!-- @include('social-media.html') -->
+                </div>
 
-       </div>
-      </div>
+            </div>
+        </div>
     </footer>
 
     <div id='realLogo'>
-      <header>
-        <h1><a href='http://www.makeitreal.vcu.edu' target='_blank' title='VCU Make it real.'>Make it real.</a></h1>
-        <h2><a href='http://www.vcu.edu' target='_blank' title='Virginia Commonwealth University'>Virginia Commonwealth University</a></h2>
-      </header>
+        <header>
+            <h1><a href='http://www.makeitreal.vcu.edu' target='_blank' title='VCU Make it real.'>Make it real.</a>
+            </h1>
+            <h2><a href='http://www.vcu.edu' target='_blank' title='Virginia Commonwealth University'>Virginia Commonwealth University</a>
+            </h2>
+        </header>
     </div>
 
-  <script src="../bower_components/jquery/dist/jquery.js"></script>
-  <!-- build:js js/global.min.js -->
-  <!-- bower:js -->
-  <script src="../bower_components/modernizr/modernizr.js"></script>
-  <script src="../bower_components/bootstrap-sass/dist/js/bootstrap.js"></script>
-  <script src="../bower_components/picturefill/dist/picturefill.js"></script>
-  <script src="../bower_components/respond/dest/respond.src.js"></script>
-  <script src="../bower_components/fitvids/jquery.fitvids.js"></script>
-  <!-- endbower -->
-  <script href="js/_init.js"></script>
-  <!-- endbuild -->
+    <script src="../bower_components/jquery/dist/jquery.js"></script>
+    <!-- build:js js/global.min.js -->
+    <!-- bower:js -->
+    <script src="../bower_components/modernizr/modernizr.js"></script>
+    <script src="../bower_components/bootstrap-sass/dist/js/bootstrap.js"></script>
+    <script src="../bower_components/picturefill/dist/picturefill.js"></script>
+    <script src="../bower_components/respond/dest/respond.src.js"></script>
+    <script src="../bower_components/fitvids/jquery.fitvids.js"></script>
+    <!-- endbower -->
+    <script href="js/_init.js"></script>
+    <!-- endbuild -->
 
-  <!-- GOOGLE ANALYTICS -->
-  <!-- GOOGLE ANALYTICS END-->
+    <!-- @include('google-analytics.html') -->
 
-  <!--REMOVE BEFORE PRODUCTION -->
-  <script src="http://localhost:35729/livereload.js"></script>
-  <!--REMOVE BEFORE PRODUCTION -->
+    <!--REMOVE BEFORE PRODUCTION -->
+    <script src="http://localhost:35729/livereload.js"></script>
+    <!--REMOVE BEFORE PRODUCTION -->
 </body>
+
 </html>
