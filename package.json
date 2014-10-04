@@ -1,5 +1,5 @@
 {
-  "name": "T4Dev",
+  "name": "GenericT4",
   "version": "0.1.0",
   "description": "A sample project to help VCU web developers get started with effectively for TerminalFour",
   "main": "index.js",
@@ -22,7 +22,7 @@
     "grunt-contrib-uglify": "latest",
     "grunt-contrib-watch": "latest",
     "grunt-html-validation": "latest",
-    "grunt-include-replace": "^2.0.0",
+    "grunt-include-replace": "latest",
     "grunt-sails-linker": "latest",
     "grunt-text-replace": "latest",
     "grunt-usemin": "latest",

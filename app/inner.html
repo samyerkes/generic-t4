@@ -21,9 +21,9 @@
 </head>
 
 <body>
-    <!-- @include('vcu-identity.html') -->
+    <!-- @include('_layout/vcu-identity.html') -->
 
-    <!-- @include('page-title.html') -->
+    <!-- @include('_layout/page-title.html') -->
 
     <div class="separator hidden-sm hidden-xs"></div>
 
@@ -41,18 +41,9 @@
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
-                    <li><a href="#">Home</a>
-                    </li>
-                    <li><a href="#">Inspiring Stories</a>
-                    </li>
-                    <li><a href="#">Letter from the Director</a>
-                    </li>
-                    <li><a href="#">By the Numbers</a>
-                    </li>
-                    <li><a href="#">Virginia's Cancer Resource</a>
-                    </li>
-                </ul>
+                
+                <!-- @include('_layout/main.html') -->
+
             </div>
             <!-- /.navbar-collapse -->
         </div>
@@ -62,33 +53,20 @@
     <div class="container content">
         <div class="row">
             <div class="col-md-9 col-md-push-3">
-               <ol class="breadcrumb">
-                    <li><a href="#">Home</a>
-                    </li>
-                    <li><a href="#">Library</a>
-                    </li>
-                    <li class="active">Data</li>
-                </ol>
-                <h2>Page title</h2>
+               
+               <!-- @include('_layout/breadcrumbs.html') -->
 
-                <!-- @include('jumbotron.html') -->
+                <!-- @include('_layout/current-page.html') -->
 
-                <!-- @include('general-content.html') -->
+                <!-- @include('_comp/jumbotron.html') -->
+
+                <!-- @include('_comp/general-content.html') -->
 
             </div>
             <div class="sidebar col-md-3 col-md-pull-9 hidden-xs hidden-sm">
-                <ul class="nav navbar-nav">
-                    <li><a href="#">Home</a>
-                    </li>
-                    <li><a href="#">Inspiring Stories</a>
-                    </li>
-                    <li><a href="#">Letter from the Director</a>
-                    </li>
-                    <li><a href="#">By the Numbers</a>
-                    </li>
-                    <li><a href="#">Virginia's Cancer Resource</a>
-                    </li>
-                </ul>
+                
+                <!-- @include('_layout/sidebar-nav.html') -->
+
             </div>
         </div>
     </div>
@@ -97,12 +75,15 @@
         <div class="container module">
             <div class="row">
                 <div class="col-md-4">
-                    <!-- @include('footer.html') -->
-                    <p>Last Updated: 09/11/2014 <a href="#" class="t4Edit-page">Edit</a>
+                    
+                    <!-- @include('_layout/footer.html') -->
+
                 </div>
 
                 <div class="col-md-8">
-                    <!-- @include('social-media.html') -->
+
+                    <!-- @include('_layout/social-media.html') -->
+                
                 </div>
 
             </div>
@@ -130,7 +111,7 @@
     <script href="js/_init.js"></script>
     <!-- endbuild -->
 
-    <!-- @include('google-analytics.html') -->
+    <!-- @include('_layout/google-analytics.html') -->
 
     <!--REMOVE BEFORE PRODUCTION -->
     <script src="http://localhost:35729/livereload.js"></script>

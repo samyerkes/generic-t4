@@ -1,0 +1,11 @@
+[
+          {"from":"<!-- @include('_layout/breadcrumbs.html') -->" , "to":"<t4 type='navigation' id='2274'/>"},
+          {"from":"<!-- @include('_layout/vcu-identity.html') -->" , "to":"<t4 type='navigation' id='2290'/>"},
+          {"from":"<!-- @include('_layout/social-media.html') -->" , "to":"<t4 type='navigation' id='2269'/>"},
+          {"from":"<!-- @include('_layout/main.html') -->" , "to":"<t4 type='navigation' id='2288'/>"},
+          {"from":"<!-- @include('_layout/page-title.html') -->" , "to":"<t4 type='navigation' id='2272'/>"},
+          {"from":"<!-- @include('_layout/footer.html') -->" , "to":"<t4 type='navigation' id='2271'/>"},
+          {"from":"<!-- @include('_layout/sidebar-nav.html') -->" , "to":"<t4 type='navigation' id='2289'/>"},
+          {"from":"<!-- @include('_layout/interactive.html') -->" , "to":"<t4 type='navigation' id='2273'/>"},
+          {"from":"<!-- @include('_layout/google-analytics.html') -->" , "to":"<t4 type='navigation' id='2275'/>"}
+]

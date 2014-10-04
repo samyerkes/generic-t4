@@ -1,0 +1,7 @@
+[
+          {"from":"css/global.min.css" , "to":"<t4 type='media' id='105243' formatter='path/*'/>"},
+          {"from":"bower_components/modernizr/modernizr.js" , "to":"<t4 type='media' id='105245' formatter='path/*'/>"},
+          {"from":"../bower_components/jquery/dist/jquery.js" , "to":"<t4 type='media' id='105246' formatter='path/*'/>"},
+          {"from":"js/global.min.js" , "to":"<t4 type='media' id='105244' formatter='path/*'/>"},
+          {"from":"imgs/favicon.ico" , "to":"<t4 type='media' id='106836' formatter='path/*'/>"}
+]

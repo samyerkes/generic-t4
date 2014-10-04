@@ -104,9 +104,15 @@ module.exports = function(grunt) {
             src: 'modernizr.js',
             dest: 'dist/bower_components/modernizr/'
         },
-        t4: {
+        appHTML: {
+          cwd: 'app/',
+          src: '*.html',
+          dest: 'dist/',
+          expand: true
+        },
+        t4HTML: {
           cwd: 'dist/',
-          src: '*/**',
+          src: '**/*',
           dest: 't4/',
           expand: true
         }
@@ -121,7 +127,7 @@ module.exports = function(grunt) {
         },
         src: '*.html',
         dest: 'dist/',
-        cwd: 'app/',
+        cwd: 'dist/',
         expand: 'true'
       }
     },
@@ -129,6 +135,16 @@ module.exports = function(grunt) {
     replace: {
       t4css: {
         src: ['t4/css/*.css'],
+        overwrite: true,
+        replacements: []
+      },
+      t4html: {
+        src: ['t4/*.html'],
+        overwrite: true,
+        replacements: []
+      },
+      t4path: {
+        src: ['t4/*.html'],
         overwrite: true,
         replacements: []
       }
@@ -153,16 +169,23 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-wiredep');
 
 grunt.registerTask('replace-t4', function() {
-  var cssReplacements = grunt.file.readJSON('replacements.json');
+  var cssReplacements = grunt.file.readJSON('replacements-imgs.json');
   grunt.config('replace.t4css.replacements', cssReplacements);
+
+  var htmlReplacements = grunt.file.readJSON('replacements-layout.json');
+  grunt.config('replace.t4html.replacements', htmlReplacements);
+
+  var pathReplacements = grunt.file.readJSON('replacements-paths.json');
+  grunt.config('replace.t4path.replacements', pathReplacements);
+
   grunt.task.run('replace');
 });
 
 //Build the initial directories
-grunt.registerTask('build', ['wiredep', 'includereplace', 'copy', 'sass', 'autoprefixer', 'imagemin', 'useminPrepare', 'concat', 'cssmin', 'uglify', 'usemin', 't4', 'watch']);
+grunt.registerTask('build', ['wiredep', 'copy:appHTML', 'sass', 'autoprefixer', 'imagemin', 'useminPrepare', 'concat', 'cssmin', 'uglify', 'usemin', 'copy:t4HTML', 'includereplace', 't4', 'watch']);
 
 //Build T4 directory
-grunt.registerTask('t4', ['copy:t4', 'replace-t4']);
+grunt.registerTask('t4', ['replace-t4']);
 
 // Default task.
 grunt.registerTask('default', ['watch']);

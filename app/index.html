@@ -22,40 +22,11 @@
 </head>
 
 <body>
-    <!-- @include('vcu-identity.html') -->
+    <!-- @include('_layout/vcu-identity.html') -->
 
-    <!-- @include('page-title.html') -->
+    <!-- @include('_layout/page-title.html') -->
 
-    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-        <!-- Indicators -->
-        <ol class="carousel-indicators">
-            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-        </ol>
-
-        <!-- Wrapper for slides -->
-        <div class="carousel-inner">
-            <div class="item active">
-                <img src="http://placehold.it/700x200/56a5eb/ffffff/&text=hero+image+700x200px" alt="...">
-            </div>
-            <div class="item">
-                <img src="http://placehold.it/700x200/56a5eb/ffffff/&text=hero+image+700x200px" alt="...">
-            </div>
-
-            <div class="item">
-                <img src="http://placehold.it/700x200/56a5eb/ffffff/&text=hero+image+700x200px" alt="...">
-            </div>
-        </div>
-
-        <!-- Controls -->
-        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-            <span class="glyphicon glyphicon-chevron-left"></span>
-        </a>
-        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-            <span class="glyphicon glyphicon-chevron-right"></span>
-        </a>
-    </div>
+    <!-- @include('_layout/interactive.html') -->
 
     <nav class="navbar navbar-default" role="navigation">
         <div class="container">
@@ -71,18 +42,9 @@
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
-                    <li><a href="#">Home</a>
-                    </li>
-                    <li><a href="#">Inspiring Stories</a>
-                    </li>
-                    <li><a href="#">Letter from the Director</a>
-                    </li>
-                    <li><a href="#">By the Numbers</a>
-                    </li>
-                    <li><a href="#">Virginia's Cancer Resource</a>
-                    </li>
-                </ul>
+                
+                <!-- @include('_layout/main.html') -->
+
             </div>
             <!-- /.navbar-collapse -->
         </div>
@@ -90,54 +52,26 @@
     </nav>
 
     <div class="content container">
-        <!-- Example row of columns -->
-        <div class="row">
-            <div class="col-md-6">
-                <h2>Heading</h2>
-                <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
-                <p><a class="btn btn-default pull-right" href="#" role="button">View details &raquo;</a>
-                </p>
-            </div>
-            <div class="col-md-6">
-                <h2>Heading</h2>
-                <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
-                <p><a class="btn btn-default pull-right" href="#" role="button">View details &raquo;</a>
-                </p>
-            </div>
-        </div>
+        
+        <!-- @include('_comp/2-columns.html') -->
 
-        <div class="row">
-            <div class="col-md-4">
-                <h2>Heading</h2>
-                <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
-                <p><a class="btn btn-default pull-right" href="#" role="button">View details &raquo;</a>
-                </p>
-            </div>
-            <div class="col-md-4">
-                <h2>Heading</h2>
-                <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
-                <p><a class="btn btn-default pull-right" href="#" role="button">View details &raquo;</a>
-                </p>
-            </div>
-            <div class="col-md-4">
-                <h2>Heading</h2>
-                <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-                <p><a class="btn btn-default pull-right" href="#" role="button">View details &raquo;</a>
-                </p>
-            </div>
-        </div>
+        <!-- @include('_comp/3-columns.html') -->
+
     </div>
 
     <footer>
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
-                    <!-- @include('footer.html') -->
-                    <p>Last Updated: 09/11/2014 <a href="#" class="t4Edit-page">Edit</a>
+                    
+                    <!-- @include('_layout/footer.html') -->
+
                 </div>
 
                 <div class="col-md-8">
-                    <!-- @include('social-media.html') -->
+
+                    <!-- @include('_layout/social-media.html') -->
+                
                 </div>
 
             </div>
@@ -167,7 +101,7 @@
     <script href="js/_init.js"></script>
     <!-- endbuild -->
 
-    <!-- @include('google-analytics.html') -->
+    <!-- @include('_layout/google-analytics.html') -->
 
     <!--REMOVE BEFORE PRODUCTION -->
     <script src="http://localhost:35729/livereload.js"></script>
