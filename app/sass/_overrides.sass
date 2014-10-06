@@ -58,3 +58,29 @@ ul.media-list
     color: #a94442
     background-color: #f2dede
     border-color: #ebccd1
+
+.jumbotron
+  @if $vcu-identity == $vcu-identity-gold
+    background: $vcu-identity-gold
+    color: $black
+    a
+      color: $white !important
+  @if $vcu-identity == $vcu-identity-gray, $vcu-identity-white, $vcu-identity-black, $vcu-identity-noIdentity
+    color: $font-color
+    a
+      color: $vcu-identity-gold
+
+.carousel
+  margin-bottom: $pad
+.carousel-caption
+  left: 0
+  right: 0
+  bottom: 0
+  padding: $pad
+  text-align: left
+  width: 100%
+  background: rgba($real_black, .7)
+  @media screen and (max-width: $babybear)
+    position: relative
+    padding: $pad-sm
+    background: $black

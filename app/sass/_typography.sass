@@ -19,8 +19,22 @@ ul
 			margin-left: $pad-sm
 a
 	color: $links
+	@if $vcu-identity == $vcu-identity-white
+		color: $vcu-identity-gold
 	&:hover, &:focus
 		color: $links-hover
+		@if $vcu-identity == $vcu-identity-white
+			&:hover, &:focus
+				color: lighten($vcu-identity-gold, 10%)
+	footer &
+		@if $vcu-identity == $vcu-identity-black
+			color: $vcu-identity-gold 
+			&:hover, &:focus
+				color: darken($vcu-identity-gold, 10%)
+		@if $vcu-identity == $vcu-identity-gray
+			&:hover, &:focus
+				color: lighten($vcu-identity-gray, 10%)
+
 pre
 	margin: $pad-sm 0
 	padding: $pad-sm
