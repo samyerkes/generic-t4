@@ -1,0 +1,20 @@
+<form role="form" id="form_name" onsubmit="chkform_appointment(); return false" method="post" name="form_name" action="https://www.vcu.edu/cgi-bin/mailto">
+    <input value="syerkes@vcu.edu" type="hidden" name="to" />
+    <input type="hidden" name="from" />
+    <input value="Form Name" type="hidden" name="subject" />
+    <input value="http://www.vcu.edu" type="hidden" name="redirect" />
+    <input name="required" value="checkboxes" type="hidden" />
+    <h3>Form title</h3>
+    
+    <!-- @include('_form/input-text.html') -->
+
+    <!-- @include('_form/textarea.html') -->
+
+    <!-- @include('_form/checkbox.html') -->
+
+    <!-- @include('_form/radio.html') -->
+
+    <!-- @include('_form/select.html') -->
+    
+    <button name="submit" value="Submit" type="submit" class="btn btn-success">Submit</button>
+</form>

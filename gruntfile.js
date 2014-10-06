@@ -9,7 +9,7 @@ module.exports = function(grunt) {
         livereload: true
       },
       html: {
-        files: 'app/**/*.html',
+        files: 'app/**/**/*.html',
         tasks: ['build']
       },
       js: {
