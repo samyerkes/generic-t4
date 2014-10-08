@@ -1,7 +1,7 @@
 #T4 Generic Bootstrap Documentation
 *	Version: 0.1.0
 *	Author: [Sam Yerkes](mailto:syerkes@vcu.edu), VCU Webmaster
-*	Git repo: [https://github.com/samyerkes/generic-t4](https://github.com/samyerkes/generic-t4
+*	Git repo: [https://github.com/samyerkes/generic-t4](https://github.com/samyerkes/generic-t4)
 *	Live demo: Coming soon
 
 This template serves as a starting point for T4 sites at VCU. It uses a common set of content types and layouts so it has the ability to be skinned. The template is based on the [Bootstrap](http://www.getbootstrap.com) framework. 
