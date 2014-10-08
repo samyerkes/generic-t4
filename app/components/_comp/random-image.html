@@ -1,0 +1,9 @@
+<script>
+function code($) {
+    var images = ['http://www.boundingoveroursteps.com/wp-content/uploads/2013/01/Dogs-Life-in-Chiang-Mai-Featured.jpg','http://www.lagunabeachbest.com/wp-content/uploads/2013/10/Laguna-dog-800.jpg','http://farm9.staticflickr.com/8113/8636168894_0079728505_b.jpg'];
+    $('#randomImage').append('<img src="'+ images[Math.floor(Math.random() * images.length)] +'" />');
+}
+function jquery_ready() {if (window.jQuery) {code(window.jQuery);} else {t = window.setTimeout(jquery_ready, 100);}}t = window.setTimeout(jquery_ready, 100);
+</script>
+
+<div id="randomImage"></div>

@@ -1,11 +1,13 @@
 .sidebar
+  .nav
+    width: 100%
   li
     width: 100%
     border-top: 1px solid #eeeeee
     list-style: none
   a
     display: block
-    padding: 15px 0 15px 15px
+    padding: $pad-sm
     font-size: 14px
     &:hover, &:focus
       background: #eeeeee
@@ -13,4 +15,7 @@
   ul ul
     @extend %nospace
     li a
-      padding: 10px 10px 10px 50px
+      padding-left: $pad*1.5
+    ul
+      li a
+        padding-left: $pad*2.5
