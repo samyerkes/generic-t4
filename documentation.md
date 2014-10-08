@@ -1,5 +1,5 @@
 #T4 Generic Bootstrap Documentation
-*	Version: 0.0.1
+*	Version: 0.1.0
 *	Author: [Sam Yerkes](mailto:syerkes@vcu.edu), VCU Webmaster
 *	Git repo: [https://github.com/samyerkes/generic-t4](https://github.com/samyerkes/generic-t4
 *	Live demo: Coming soon
