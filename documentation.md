@@ -38,7 +38,7 @@ The Jumbotron content type displays a stylized div that can have content inside.
 The Page Meta content type is a special content type that should be added on every page to define the page's purpose or teaser information. *Important to note, this content does not actually show up on the page it is added, but works in conjunction with the [Child Pages List](#child-pages-list) content type.*
 
 ###Photo Slideshow
-This content type gives the user the option to add up to ten photos into an interactive slideshow. The user has the option to toggle the carousel controls and indicator on/off and add captions for all the photos individually.
+This content type gives the user the option to add up to ten photos into an interactive slideshow. The user has the option to toggle the carousel controls and indicator on/off, add captions for all the photos individually, and choose whether the photos fade or slide in and out.
 
 ###Random Image
 The Random Image content type gives users the ability to add an image that is randomized from an array of five possibilities.
