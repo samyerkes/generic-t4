@@ -1,0 +1,61 @@
+---
+Fade-Slide: slide
+
+Carousel-Indicators: true
+Carousel-Controls: true
+
+Image-1: imgs/stock-lg/1.jpg
+Image-1-Caption: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio, eaque, nihil. Itaque dicta aliquam maiores sint ipsum quisquam autem inventore.
+
+Image-2: imgs/stock-lg/3.jpg
+Image-2-Caption: Oh captain, my captain.
+
+Image-3: imgs/stock-lg/4.jpg
+Image-3-Caption: Third caption
+---
+<div id="carousel-example-generic" class="carousel slide {{ photo-slideshow.Fade-Slide }}" data-ride="carousel">
+    
+    {{#is photo-slideshow.Carousel-Indicators true }}
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+    </ol>
+    {{/is}}
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+        <div class="item active">
+            <img src="{{ photo-slideshow.Image-1 }}" alt="...">
+            <div class="carousel-caption">
+                <p>{{ photo-slideshow.Image-1-Caption }}</p>
+            </div>
+        </div>
+        <div class="item">
+            <img src="{{ photo-slideshow.Image-2 }}" alt="...">
+            <div class="carousel-caption">
+                <p>{{ photo-slideshow.Image-2-Caption }}</p>
+            </div>
+        </div>
+        <div class="item">
+            <img src="{{ photo-slideshow.Image-3 }}" alt="...">
+            <div class="carousel-caption">
+                <p>{{ photo-slideshow.Image-3-Caption }}</p>
+            </div>
+        </div>
+    </div>
+
+    {{#is photo-slideshow.Carousel-Controls true }}
+    <!-- Controls -->
+    <div>
+        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+        </a>
+        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+        </a>
+    </div>
+    {{/is}}
+
+</div>

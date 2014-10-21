@@ -5,28 +5,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Massey Annual Report - Virginia Commonwealth University</title>
+    <title>Test106 - Virginia Commonwealth University</title>
 
     <!-- build:css css/global.min.css -->
     <!-- bower:css -->
-    <link rel="stylesheet" href="../bower_components/bootstrap-sass/dist/css/bootstrap.css" />
-    <link rel="stylesheet" href="../bower_components/normalize-css/normalize.css" />
-    <link rel="stylesheet" href="../bower_components/font-awesome/css/font-awesome.css" />
+    <link rel="stylesheet" href="../../bower_components/bootstrap-sass/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="../../bower_components/normalize-css/normalize.css" />
+    <link rel="stylesheet" href="../../bower_components/font-awesome/css/font-awesome.css" />
     <!-- endbower -->
-    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="../css/global.css">
     <!-- endbuild -->
-    <link rel="icon" href="imgs/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="../imgs/favicon.ico" type="image/x-icon">
 
-
-    <script href="bower_components/modernizr/modernizr.js"></script>
+    <script href="../bower_components/modernizr/modernizr.js"></script>
 </head>
 
 <body>
-    <!-- @include('_layout/vcu-identity.html') -->
+    
+<div id="vcuIdentityWrapper" class="identity-gold">
+    <header id="vcuIdentity">
+        <h1><a title="Virginia Commonwealth University" target="_blank" href="http://www.vcu.edu">Virginia Commonwealth University</a>
+        </h1>
+        <h2><a title="VCU Make it real." target="_blank" href="http://www.makeitreal.vcu.edu">Make it real.</a>
+        </h2>
+    </header>
+</div>
 
-    <!-- @include('_layout/site-title.html') -->
 
-    <!-- @include('_layout/homepage-interactive.html') -->
+    
+<div class="header container module">
+    <h1>
+        <a class="pull-left" href="index.html">
+            <img src="http://placehold.it/200x100/56a5eb/ffffff/&amp;text=200x100px" alt="Generic Department" />
+        </a>
+    </h1>
+    <h2>Generic Department</h2>
+</div>
+
 
     <nav class="navbar navbar-default" role="navigation">
         <div class="container">
@@ -43,7 +58,14 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 
-                <!-- @include('_layout/main.html') -->
+                
+<ul class="nav navbar-nav">
+    <li><a href="inner.html">Inner</a>
+    </li>
+    <li><a href="#">Components</a>
+    </li>
+</ul>
+ 
 
             </div>
             <!-- /.navbar-collapse -->
@@ -53,9 +75,37 @@
 
     <div class="content container">
         
-        <!-- @include('_comp/2-columns.html') -->
+        
 
-        <!-- @include('_comp/3-columns.html') -->
+
+<div class="row">
+    <div class="col-md-6">
+        <h2>Heading 1</h2>
+        <p>Donec sed odio dui. Vestibulum id ligula porta felis euismod semper. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Nullam id dolor id nibh ultricies vehicula ut id elit. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Maecenas faucibus mollis interdum. Donec ullamcorper nulla non metus auctor fringilla.</p>
+    </div>
+    <div class="col-md-6">
+        <h2>Heading 2</h2>
+        <p>Donec sed odio dui. Vestibulum id ligula porta felis euismod semper. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Nullam id dolor id nibh ultricies vehicula ut id elit. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Maecenas faucibus mollis interdum. Donec ullamcorper nulla non metus auctor fringilla.</p>
+    </div>
+</div>
+  
+
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>Heading 1</h2>
+        <p>Donec sed odio dui. Vestibulum id ligula porta felis euismod semper. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Nullam id dolor id nibh ultricies vehicula ut id elit. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Maecenas faucibus mollis interdum. Donec ullamcorper nulla non metus auctor fringilla.</p>
+    </div>
+    <div class="col-md-4">
+        <h2>Heading 2</h2>
+        <p>Donec sed odio dui. Vestibulum id ligula porta felis euismod semper. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Nullam id dolor id nibh ultricies vehicula ut id elit. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Maecenas faucibus mollis interdum. Donec ullamcorper nulla non metus auctor fringilla.</p>
+    </div>
+    <div class="col-md-4">
+        <h2>Heading 3</h2>
+        <p>Donec sed odio dui. Vestibulum id ligula porta felis euismod semper. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Nullam id dolor id nibh ultricies vehicula ut id elit. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Maecenas faucibus mollis interdum. Donec ullamcorper nulla non metus auctor fringilla.</p>
+    </div>
+</div>
+ 
 
     </div>
 
@@ -64,13 +114,46 @@
             <div class="row">
                 <div class="col-md-4">
                     
-                    <!-- @include('_layout/footer.html') -->
+                    
+<p><a href="http://www.vcu.edu" alt="Virginia Commonwealth University">Virgina Commonwealth University</a>
+    <br />
+    <a href="#" alt="Generic Department">Generic Department</a>
+    <br />401 College Street, P.O. Box 980037
+    <br />Richmond, Virginia 23298-0037
+    <br />Phone: XXX-XXX-XXXX
+    <br />Fax: XXX-XXX-XXXX
+</p>
+<p>Last Updated: 09/11/2014 <a href="#" class="t4Edit-page">Edit</a>
+</p>
 
                 </div>
 
                 <div class="col-md-8">
 
-                    <!-- @include('_layout/social-media.html') -->
+                    
+<ul class="social">
+    <li><a href=""><i class="fa fa-facebook fa-2x"></i></a>
+    </li>
+    <li><a href=""><i class="fa fa-twitter fa-2x"></i></a>
+    </li>
+    <li><a href=""><i class="fa fa-instagram fa-2x"></i></a>
+    </li>
+    <li><a href=""><i class="fa fa-youtube fa-2x"></i></a>
+    </li>
+    <li><a href=""><i class="fa fa-tumblr fa-2x"></i></a>
+    </li>
+    <li><a href=""><i class="fa fa-pinterest fa-2x"></i></a>
+    </li>
+    <li><a href=""><i class="fa fa-google-plus fa-2x"></i></a>
+    </li>
+    <li><a href=""><i class="fa fa-linkedin fa-2x"></i></a>
+    </li>
+    <li><a href=""><i class="fa fa-vimeo-square fa-2x"></i></a>
+    </li>
+    <li><a href=""><i class="fa fa-wordpress fa-2x"></i></a>
+    </li>
+</ul>
+
                 
                 </div>
 
@@ -90,16 +173,19 @@
     <script src="../bower_components/jquery/dist/jquery.js"></script>
     <!-- build:js js/global.min.js -->
     <!-- bower:js -->
-    <script src="../bower_components/modernizr/modernizr.js"></script>
-    <script src="../bower_components/bootstrap-sass/dist/js/bootstrap.js"></script>
-    <script src="../bower_components/picturefill/dist/picturefill.js"></script>
-    <script src="../bower_components/respond/dest/respond.src.js"></script>
-    <script src="../bower_components/fitvids/jquery.fitvids.js"></script>
+    <script src="../../bower_components/modernizr/modernizr.js"></script>
+    <script src="../../bower_components/bootstrap-sass/dist/js/bootstrap.js"></script>
+    <script src="../../bower_components/picturefill/dist/picturefill.js"></script>
+    <script src="../../bower_components/respond/dest/respond.src.js"></script>
+    <script src="../../bower_components/fitvids/jquery.fitvids.js"></script>
     <!-- endbower -->
-    <script href="js/_init.js"></script>
+    <script href="../js/_init.js"></script>
     <!-- endbuild -->
 
-    <!-- @include('_layout/google-analytics.html') -->
+    
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create', 'xxxxxxxxxxxxxx', 'vcu.edu');ga('send', 'pageview');
+</script>
 
     <!--REMOVE BEFORE PRODUCTION -->
     <script src="http://localhost:35729/livereload.js"></script>

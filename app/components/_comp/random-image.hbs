@@ -1,0 +1,14 @@
+---
+Image-1: imgs/stock-lg/1.jpg
+Image-2: imgs/stock-lg/2.jpg
+Image-3: imgs/stock-lg/3.jpg
+---
+<script>
+function code($) {
+    var images = ['{{ random-image.Image-1 }}','{{ random-image.Image-2 }}','{{ random-image.Image-3 }}'];
+    $('#randomImage').append('<img src="'+ images[Math.floor(Math.random() * images.length)] +'" />');
+}
+function jquery_ready() {if (window.jQuery) {code(window.jQuery);} else {t = window.setTimeout(jquery_ready, 100);}}t = window.setTimeout(jquery_ready, 100);
+</script>
+
+<div id="randomImage"></div>

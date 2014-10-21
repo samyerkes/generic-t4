@@ -2,6 +2,7 @@
   "name": "GenericT4",
   "version": "0.1.0",
   "description": "A sample project to help VCU web developers get started with effectively for TerminalFour",
+  "repository": "https://github.com/samyerkes/generic-t4.git",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -9,23 +10,25 @@
   "author": "Sam Yerkes",
   "license": "BSD-2-Clause",
   "devDependencies": {
+    "assemble": "latest",
     "grunt": "latest",
     "grunt-autoprefixer": "latest",
     "grunt-bower-task": "latest",
     "grunt-combine-media-queries": "latest",
-    "grunt-contrib-compass": "latest",
     "grunt-contrib-concat": "latest",
     "grunt-contrib-copy": "latest",
     "grunt-contrib-cssmin": "latest",
-    "grunt-contrib-imagemin": "latest",
     "grunt-contrib-sass": "latest",
     "grunt-contrib-uglify": "latest",
     "grunt-contrib-watch": "latest",
-    "grunt-html-validation": "latest",
     "grunt-include-replace": "latest",
-    "grunt-sails-linker": "latest",
     "grunt-text-replace": "latest",
     "grunt-usemin": "latest",
     "grunt-wiredep": "latest"
+  },
+  "dependencies": {
+    "assemble": "^0.4.42",
+    "grunt-assemble": "^0.1.15",
+    "grunt-contrib-imagemin": "git://github.com/gruntjs/grunt-contrib-imagemin"
   }
 }
