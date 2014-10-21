@@ -49,6 +49,9 @@ The Responsive Embed content type gives the user a place to embed an iframe vide
 ###Tabs
 The Tabs content type gives the user the option to add HTML content into tabbed form. This content types allows up to five tabs.
 
+###Window
+A window content type pulls in content from a hidden child section called "Window". This is used to provide a full page colored div that separates content on the page. This content type can only be used on the homepage.
+
 ##Style Asset Content Types
 Style Asset Content Types should only be allowed in a hidden section called "Style_assets". These content types work to modify the entire template and the homepage feature.
 
@@ -62,7 +65,7 @@ If a Photo Slideshow component is added to the "Style_assets" section then it wi
 The Site Title content type lets users designate a primary logo (image), primary logo link, secondary title (text) and secondary title link in the top header of the site.
 
 ###Social Media
-The Social Media content type lets users add icons for their social media presences. Currently this content type includes icons for Facebook Twitter, Instagram and Youtube; other social media outlets can easily be added upon request.
+The Social Media content type lets users add icons for their social media presences. Currently this content type includes icons for Facebook Twitter, Instagram Youtube, Tumblr, Pinterest, Google Plus, LinkedIn, Vimeo and Wordpress.
 
 ###VCU Branding Bar
 The VCU Branding Bar content type lets users change the color of the required VCU Branding. The options are gold, gray, white, or black. *Important to note, the branding footer that is applied when the site is viewed in mobile is always black.*

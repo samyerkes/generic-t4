@@ -192,3 +192,6 @@ ul.media-list img { display: inline; width: auto !important; }
 .carousel-fade .carousel-inner .active.left, .carousel-fade .carousel-inner .active.right { z-index: 1; left: 0; opacity: 0; }
 .carousel-fade .carousel-inner .next.left, .carousel-fade .carousel-inner .prev.right { opacity: 1; }
 .carousel-fade .carousel-control { z-index: 2; }
+
+.window { background: #f8b801; }
+.window .content { background: #f8b801; }
