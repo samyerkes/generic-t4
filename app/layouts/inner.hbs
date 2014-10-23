@@ -25,9 +25,7 @@
 
     {{> site-title }}
 
-    <div class="separator hidden-sm hidden-xs"></div>
-
-    <nav class="navbar navbar-default hidden-lg hidden-med" role="navigation">
+    <nav class="navbar navbar-default" role="navigation">
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
@@ -53,8 +51,9 @@
     <div class="container content">
         <div class="row">
             <div class="col-md-9 col-md-push-3">
-               
-               {{> body }} 
+                {{> breadcrumbs }}
+
+                {{> body }} 
 
             </div>
             <div class="sidebar col-md-3 col-md-pull-9 hidden-xs hidden-sm">

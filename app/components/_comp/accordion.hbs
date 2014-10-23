@@ -7,6 +7,12 @@ Content-2: Content 2, Sed posuere consectetur est at lobortis. Praesent commodo 
 
 Heading-3: Collapsible Group Item 3
 Content-3: Content 3, Sed posuere consectetur est at lobortis. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Etiam porta sem malesuada magna mollis euismod.
+
+Heading-4: Collapsible Group Item 4
+Content-4: Content 4, Sed posuere consectetur est at lobortis. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Etiam porta sem malesuada magna mollis euismod.
+
+Heading-5: Collapsible Group Item 5
+Content-5: Content 5, Sed posuere consectetur est at lobortis. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Etiam porta sem malesuada magna mollis euismod.
 ---
 <div class="panel-group" id="accordion">
   <div class="panel panel-default">
@@ -48,6 +54,34 @@ Content-3: Content 3, Sed posuere consectetur est at lobortis. Praesent commodo 
     <div id="collapseThree" class="panel-collapse collapse">
       <div class="panel-body">
         {{ accordion.Content-3 }}
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapseFour">
+          {{ accordion.Heading-4 }}
+        </a>
+      </h4>
+    </div>
+    <div id="collapseFour" class="panel-collapse collapse">
+      <div class="panel-body">
+        {{ accordion.Content-4 }}
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapseFive">
+          {{ accordion.Heading-5 }}
+        </a>
+      </h4>
+    </div>
+    <div id="collapseFive" class="panel-collapse collapse">
+      <div class="panel-body">
+        {{ accordion.Content-5 }}
       </div>
     </div>
   </div>

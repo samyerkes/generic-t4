@@ -25,6 +25,9 @@ The 3 Columns content type creates two columns of content using the HTML WYSIWYG
 ###3 Columns Pull
 The 3 Columns Pull content type pulls in the content from hidden child sections called "Column_1", "Column_2", and "Column_3". This way you can reuse any special components and add them into a specific column. It also gives you the ability to add optional headings for those columns.
 
+###Accordion
+This content type breaks up content into collapsable sections. A user can designate up to five sections. The accordion will span the entire width of the content area.
+
 ###Child Pages List
 This content type automatically pulls in the page meta from it's child pages and displays it in an orderly list. Only child pages with meta information will be included in the list. Users are given the option to add a image to this content type, it is suggested to establish a meta image default size. I used 90x90px as a good base point.
 
@@ -33,6 +36,12 @@ The Content Well content type moves HTML content into a colored div. The div has
 
 ###Jumbotron
 The Jumbotron content type displays a stylized div that can have content inside. The user can optionally set a photo background and custom text color to style how they would like. If a photo background is chosen it is suggested to apply a colored overlay in a photo editing program so the text is still readable. The example site uses a photo that has a #000000 (black) overlay with 50% opacity.
+
+###News Headlines
+The News Headlines content type is used to pull in the latest 3 News Items from the News section into an unordered list. Users have the ability to add an optional heading on the top of the new items.
+
+###News Item
+The News Item content type is used to add news items to the News section. Users have the ability to add a News Title, News Excerpt, News Excerpt Thumbnail, News Date, and News Content. This content can be pulled in to other pages via other content types (i.e. News Headlines).
 
 ###Page Meta
 The Page Meta content type is a special content type that should be added on every page to define the page's purpose or teaser information. *Important to note, this content does not actually show up on the page it is added, but works in conjunction with the [Child Pages List](#child-pages-list) content type.*
@@ -46,11 +55,11 @@ The Random Image content type gives users the ability to add an image that is ra
 ###Responsive Embed
 The Responsive Embed content type gives the user a place to embed an iframe video or media element (youtube, vimeo, etc.) into a dedicated responsive wrapper.
 
+###Slice
+A slice content type pulls in content from a hidden child section called "Slice". This is used to provide a full page colored div that separates content on the page. This content type can only be used on the homepage.
+
 ###Tabs
 The Tabs content type gives the user the option to add HTML content into tabbed form. This content types allows up to five tabs.
-
-###Window
-A window content type pulls in content from a hidden child section called "Window". This is used to provide a full page colored div that separates content on the page. This content type can only be used on the homepage.
 
 ##Style Asset Content Types
 Style Asset Content Types should only be allowed in a hidden section called "Style_assets". These content types work to modify the entire template and the homepage feature.

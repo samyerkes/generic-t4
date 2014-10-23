@@ -130,15 +130,15 @@ module.exports = function(grunt) {
             
         },
         assemble: {
+            options: {
+                expand: true,
+                flatten: true,
+                layoutdir: 'app/layouts/',
+                partials: 'app/components/**/*.hbs'
+            },
             pages: {
-                options: {
-                    flatten: true,
-                    layoutdir: 'app/layouts/',
-                    partials: 'app/components/**/*.hbs'
-                },
                 files: {
-                    'app/': ['app/pages/*.hbs'],
-                    'dist/': ['app/pages/*.hbs'],
+                    'dist/': ['app/pages/**/*.hbs'],
                 }
             }
         },
@@ -172,7 +172,7 @@ module.exports = function(grunt) {
                     from: /---(.|\n)*---/,
                     to: ''
                 }, {
-                    from: /[^"]*\./m,
+                    from: /[^"]*\./gm,
                     to: ''
                 }]
             }
