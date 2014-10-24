@@ -28,6 +28,9 @@ The 3 Columns Pull content type pulls in the content from hidden child sections 
 ###Accordion
 This content type breaks up content into collapsable sections. A user can designate up to five sections. The accordion will span the entire width of the content area.
 
+###CAS Authentication
+The CAS Authentication content type lets users designate a list of eIDs that are able to access the page and subpages via CAS authentication. To use this content type drop the CAS Authentication content type on the first page you want to authenticate and then fill in the users in the user field. Multiple users should be separated by single space. Note: this content type will not show up in the T4 preview screen, but will work once you publish out to the live site.
+
 ###Child Pages List
 This content type automatically pulls in the page meta from it's child pages and displays it in an orderly list. Only child pages with meta information will be included in the list. Users are given the option to add a image to this content type, it is suggested to establish a meta image default size. I used 90x90px as a good base point.
 
