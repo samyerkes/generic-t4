@@ -143,6 +143,10 @@ pre { margin: 10px 0; padding: 10px; border: 1px solid #f8b801; background: #ebe
 .news-excerpt a { max-width: 30%; }
 .news-meta { color: #bdc3c7; font-style: italic; }
 
+.staff-profile .row { padding-top: 0; }
+.staff-info { border-radius: 10px; background: whitesmoke; }
+.staff-info p { padding: 10px; }
+
 @media screen and (max-width: 992px) { html { font-size: 16px; }
   .wrap { width: 92%; } }
 @media screen and (max-width: 768px) { html { background: #f8f8f8; font-size: 14px; }

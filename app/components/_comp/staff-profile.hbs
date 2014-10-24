@@ -1,0 +1,26 @@
+---
+Staff-First-Name: Sam
+Staff-Middle-Initial: W
+Staff-Last-Name: Yerkes
+Staff-Title: VCU Webmaster
+Staff-Email: syerkes@vcu.edu
+Staff-Phone: (804) 827-0067
+Staff-Image: imgs/profile.jpg
+Staff-Bio: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Vestibulum id ligula porta felis euismod semper. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo, quia ratione, rem totam sed, cum excepturi obcaecati nam nisi asperiores culpa assumenda odit. Adipisci in eaque doloremque odit, voluptas quia architecto beatae, ut incidunt accusantium perspiciatis aperiam magnam sapiente illo tempora sequi, aliquam quae autem nihil maiores odio quasi itaque possimus. Voluptates accusantium saepe dolorem, magnam, ab incidunt earum nemo asperiores consequatur, suscipit voluptas eaque excepturi pariatur facere dolorum voluptate aut, repellat eveniet aliquam doloribus in. Nostrum consequatur dolorum distinctio corporis ea ipsam soluta in facilis similique quae saepe, nobis, aspernatur provident est perferendis quam. Nostrum quae, repudiandae cupiditate! Quidem.
+---
+<div class="staff-profile">
+	<h2>{{ staff-profile.Staff-First-Name }} {{ staff-profile.Staff-Middle-Initial }}. {{ staff-profile.Staff-Last-Name }}</h2>
+	<div class="row">
+		<div class="col-md-4 col-md-push-8">	
+			<div class="staff-info">
+				<img src="{{ staff-profile.Staff-Image }}" alt="" class="hidden-xs hidden-sm">
+				<p>{{ staff-profile.Staff-Title }}<br />
+				<a href="mailto:{{ staff-profile.Staff-Email }}">{{ staff-profile.Staff-Email }}</a><br />
+				{{ staff-profile.Staff-Phone }}</p>
+			</div>
+		</div>
+		<div class="col-md-8 col-md-pull-4">
+			<p>{{ staff-profile.Staff-Bio }}</p>
+		</div>
+	</div>
+</div>

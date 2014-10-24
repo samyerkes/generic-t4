@@ -59,7 +59,7 @@ The Random Image content type gives users the ability to add an image that is ra
 The Responsive Embed content type gives the user a place to embed an iframe video or media element (youtube, vimeo, etc.) into a dedicated responsive wrapper.
 
 ###Slice
-A slice content type pulls in content from a hidden child section called "Slice". This is used to provide a full page colored div that separates content on the page. This content type can only be used on the homepage.
+A slice content type pulls in content from a hidden child section called "Slice". This is used to provide a full page colored div that separates content on the page. This content type can only be used on the homepage. An example is located on this homepage.
 
 ###Tabs
 The Tabs content type gives the user the option to add HTML content into tabbed form. This content types allows up to five tabs.
