@@ -12,6 +12,8 @@ body
     border-left: 1px solid darken($vcu-identity, 5%)
     &:last-child
       border-right: 1px solid darken($vcu-identity, 5%)
+.navbar-collapse
+  max-height: auto
 .navbar-default .navbar-nav>li>a, .navbar-default .navbar-text
   color: $black
 .navbar-default .navbar-nav>li>a, .navbar-default .navbar-text
@@ -26,6 +28,19 @@ body
 
 .navbar-default .navbar-toggle
   border-color: $real_black
+
+.navbar-nav ul
+  display: none
+  li
+    border: none
+    padding: $pad-sm
+    list-style: none
+  a
+    color: $font-color
+    &:hover, &:focus
+      text-decoration: none
+  @media screen and (max-width: $babybear)
+    display: block
 
 .row
   padding-top: $pad
@@ -109,3 +124,24 @@ ul.media-list
   background: $vcu-identity
   .content
     background: $vcu-identity
+
+.home
+  .container.full
+    width: auto
+    padding: 0
+    .carousel, #randomImage img
+      margin: 0
+      padding: 0
+.inner
+  .content.container
+    .content.container
+      width: auto !important
+      padding: 0
+    .jumbotron
+      .container
+        width: auto
+footer
+  .content.container
+    background: none
+    .content.container
+      padding: 0

@@ -1,0 +1,21 @@
+---
+show-day-of-week: no
+show-year: no
+entries-number: 6
+feed: SearchDate=0&SearchCategory=International+Focus&Campus=&Buildings=&SearchAudience=0&School=&Dept=&ongoing=1&dlFlag=0&areaOfFocus=&IncludeCanceled=0&topLimit=6&flag=2&SearchSub=International+Focus
+---
+<div id="eventfeed"></div>
+<script type="text/javascript">
+	// Show day of week ('yes' or 'no')
+	var vcuEvShowDOW = '{{ vcu-dates.show-date-of-week }}';
+	// Show Year ('yes' or 'no')
+	var vcuEvShowYEAR = '{{ vcu-dates.show-year }}';
+	// Specify what div should hold content
+	var vcuEvContentDIV = 'eventfeed';
+	// Enter the feed parameters
+	// Create feed parameters at: http://www.pubinfo.vcu.edu/calendar/calXMLurl4.asp
+	var vcuEvQueryString='?SearchDate=0&SearchCategory=International+Focus&Campus=&Buildings=&SearchAudience=0&School=&Dept=&ongoing=1&dlFlag=0&areaOfFocus=&IncludeCanceled=0&topLimit=6&flag=2&SearchSub=International+Focus';
+	// Enter the maximum number of items to display
+	var vcuEvNumitems='{{ vcu-dates.entries-number }}';
+	document.write('<scr'+'ipt src="http://www.ts.vcu.edu/cgi-bin/eventModule.pl'+vcuEvQueryString+'&numitems='+vcuEvNumitems+'&contentDIV='+vcuEvContentDIV+'&showDOW='+vcuEvShowDOW+'&showYEAR='+vcuEvShowYEAR+'"></scr'+'ipt>');    
+</script>

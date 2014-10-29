@@ -24,6 +24,7 @@
     "grunt-include-replace": "latest",
     "grunt-text-replace": "latest",
     "grunt-usemin": "latest",
+    "grunt-webdav-sync": "^0.2.7",
     "grunt-wiredep": "latest"
   },
   "dependencies": {

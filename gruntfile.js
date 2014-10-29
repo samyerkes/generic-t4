@@ -176,7 +176,16 @@ module.exports = function(grunt) {
                     to: ''
                 }]
             }
-        } 
+        },
+
+        webdav_sync: {
+            default: {
+                options: {
+                    local_path: 't4/css/**',
+                    remote_path: 'http://samyerkes:m00seVSbear:t4.vcu.edu/terminalfour/mlwebdav/Generic%20Bootstrap/css'
+                }
+            } 
+        }
         
                 
 
@@ -195,6 +204,7 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-uglify');  
     grunt.loadNpmTasks('grunt-text-replace'); 
     grunt.loadNpmTasks('grunt-usemin');
+    grunt.loadNpmTasks('grunt-webdav-sync');
     grunt.loadNpmTasks('grunt-wiredep');
 
     grunt.registerTask('replace-t4', function() {

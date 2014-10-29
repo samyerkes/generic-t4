@@ -21,9 +21,8 @@ footer { background: black; color: white; }
 footer a { color: #f8b801; }
 footer a:hover, footer a:focus { color: #795a00; }
 footer a.t4Edit-page { display: inline-block; width: 14px; height: 20px; margin: 5px 0 0 5px; background: url("../imgs/pencil.gif") no-repeat; text-align: left; text-indent: -9999px; }
-footer .social { float: right; }
 footer p { margin-bottom: 0; }
-footer .col-md-4 { margin-bottom: 25px; }
+footer [class*='col-'] { margin-bottom: 0; }
 
 .separator { border-bottom: 20px #f8b801 solid; }
 
@@ -128,7 +127,7 @@ p, ul, ol { font-size: 16px; line-height: 24px; font-size: 1rem; line-height: 1.
 
 ul { padding: 0 0 0 50px; }
 @media screen and (max-width: 768px) { ul { padding: 0 0 0 25px; } }
-ul.social { margin: 0; padding: 0 0 25px; }
+ul.social { text-align: center; }
 ul.social li { display: inline; list-style: none; margin-left: 10px; }
 
 a { color: #f8b801; }
@@ -165,6 +164,8 @@ body { background: #ebebeb; }
 .navbar li { border-left: 1px solid #dfa501; }
 .navbar li:last-child { border-right: 1px solid #dfa501; }
 
+.navbar-collapse { max-height: auto; }
+
 .navbar-default .navbar-nav > li > a, .navbar-default .navbar-text { color: #444444; }
 
 .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-text:hover { color: black; }
@@ -174,6 +175,12 @@ body { background: #ebebeb; }
 .navbar-default .navbar-toggle .icon-bar { background-color: black; }
 
 .navbar-default .navbar-toggle { border-color: black; }
+
+.navbar-nav ul { display: none; }
+.navbar-nav ul li { border: none; padding: 10px; list-style: none; }
+.navbar-nav ul a { color: #444444; }
+.navbar-nav ul a:hover, .navbar-nav ul a:focus { text-decoration: none; }
+@media screen and (max-width: 768px) { .navbar-nav ul { display: block; } }
 
 .row { padding-top: 25px; padding_bottom: 25px; }
 
@@ -205,3 +212,12 @@ ul.media-list img { display: inline; width: auto !important; }
 
 .slice { background: #f8b801; }
 .slice .content { background: #f8b801; }
+
+.home .container.full { width: auto; padding: 0; }
+.home .container.full .carousel, .home .container.full #randomImage img { margin: 0; padding: 0; }
+
+.inner .content.container .content.container { width: auto !important; padding: 0; }
+.inner .content.container .jumbotron .container { width: auto; }
+
+footer .content.container { background: none; }
+footer .content.container .content.container { padding: 0; }
