@@ -1,0 +1,1 @@
+{"virtualbox":{"/var/www":{"create":true,"guestpath":"/var/www","hostpath":"/Users/samuelyerkes/Desktop/Sites/generic-t4/dist","disabled":false},"/vagrant":{"guestpath":"/vagrant","hostpath":"/Users/samuelyerkes/Desktop/Sites/generic-t4","disabled":false}}}
