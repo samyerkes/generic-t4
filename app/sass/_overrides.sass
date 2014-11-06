@@ -3,6 +3,25 @@ body
 .content.container
   padding-bottom: $pad
   background: $real_white
+
+.nav-align
+  &-center
+    display: table
+    table-layout: fixed
+    float: none
+    margin: 0 auto
+  &-right
+    float: right
+  &-left
+    float: left
+@media screen and (max-width: $babybear)
+  .nav-align
+    &-center
+      display: block
+      float: left
+    &-right
+      float: left
+
 .navbar
   margin-bottom: 0
   border: $vcu-identity 1px solid
@@ -10,8 +29,12 @@ body
   border-radius: 0
   li
     border-left: 1px solid darken($vcu-identity, 5%)
+    @media screen and (max-width: $babybear)
+      border-left: none
     &:last-child
       border-right: 1px solid darken($vcu-identity, 5%)
+      @media screen and (max-width: $babybear)
+        border-right: none
 .navbar-collapse
   max-height: auto
 .navbar-default .navbar-nav>li>a, .navbar-default .navbar-text
