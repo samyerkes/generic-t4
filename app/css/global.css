@@ -20,7 +20,7 @@ img { width: 100% !important; height: auto !important; }
 footer { background: #000; color: #fff; }
 footer a { color: #F8B801; }
 footer a:hover, footer a:focus { color: #795a00; }
-footer a.t4Edit-page { display: inline-block; width: 14px; height: 20px; margin: 5px 0 0 5px; background: url("../imgs/pencil.gif") no-repeat; text-align: left; text-indent: -9999px; }
+footer a.t4Edit-page { display: inline-block; width: 14px; height: 20px; background: url("../imgs/pencil.gif") no-repeat; text-align: left; text-indent: -9999px; }
 footer p { margin-bottom: 0; }
 footer [class*='col-'] { margin-bottom: 0; }
 
