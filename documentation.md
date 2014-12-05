@@ -1,88 +1,67 @@
-#T4 Generic Bootstrap Documentation
+#T4 Generic Bootstrap User Documentation
 *	Version: 0.1.0
 *	Author: [Sam Yerkes](mailto:syerkes@vcu.edu), VCU Webmaster
 *	Git repo: [https://github.com/samyerkes/generic-t4](https://github.com/samyerkes/generic-t4)
-*	Live demo: Coming soon
+*	Changelog: [https://github.com/samyerkes/generic-t4/blob/master/changelog.md](https://github.com/samyerkes/generic-t4/blob/master/changelog.md)
+*	Live demo: [http://www.t4dev.vcu.edu/genericbootstrap/](http://www.t4dev.vcu.edu/genericbootstrap/)
 
-This template serves as a starting point for T4 sites at VCU. It uses a common set of content types and layouts so it has the ability to be skinned. The template is based on the [Bootstrap](http://www.getbootstrap.com) framework. 
+##Table of Contents
+*	[Getting started](#getting-started)
+*	[Getting help](#getting-help)
+	*	[VCU Service Desk](#vcu-service-desk)
+	*	[Self-service support](#self-service-support)
+*	[Logging in](#logging-in)
+*	[The interface](#the-interface)
+*	[Direct Edit](#direct-edit)
+	*	[How to access Direct Edit](#how-to-access-direct-edit)
+		*	[Method 1](#method-1)
+		*	[Method 2](#method-2)
 
-The template is a child of the [VCU Yeoman Generator](https://github.com/samyerkes/generator-vcu). All CSS and Javascript has been minified and prefixed according to [caniuse.com](http://caniuse.com/) standards. The site is responsive and is easily configurable in the T4 environment.
+*Examples used in this documentation are for illustrative purposes only.*
 
-*	[Content Types](#content-types)
-*	[Style Asset Content Types](#style-asset-content-types)    
-*	[Layouts](#layouts)    
+##Getting started
+*TERMINALFOUR (T4)* is a Content Management System (CMS) that allows you to modify website content.  As an end user, you have permission to add and modify text and images and establish links to websites, documents, PDFs and media files.
 
-##Content Types
-###2 Columns
-The 2 Columns content type creates two columns of content using the HTML WYSIWYG editor for both columns. It also gives you the ability to add optional headings for those columns.
+##Getting help
 
-###2 Columns Pull
-The 2 Columns Pull content type pulls in the content from hidden child sections called "Column_1", and "Column_2". This way you can reuse any special components and add them into a specific column. It also gives you the ability to add optional headings for those columns.
+###VCU Service Desk
+All reports of incidents or service requests for the Generic Template should be reported through [VCU Service Desk](https://servicedesk.vcu.edu/). In Service Desk select *Application / System > Web CMS (Content Management System) > T4 / OpenText / WebCMS.* Please be sure to include the website and page you are working on in your ticket.
 
-###3 Columns
-The 3 Columns content type creates two columns of content using the HTML WYSIWYG editor for all three columns. It also gives you the ability to add optional headings for those columns.
+###Self-service support 
+T4’s Extranet, located under the main menu’s Help tab, gives you access to online documentation and training materials.  The first time you access the Extranet, you will be prompted to accept T4’s terms and conditions.
 
-###3 Columns Pull
-The 3 Columns Pull content type pulls in the content from hidden child sections called "Column_1", "Column_2", and "Column_3". This way you can reuse any special components and add them into a specific column. It also gives you the ability to add optional headings for those columns.
+##Logging in
+1.	Open your web browser and go to [t4.vcu.edu](http://t4.vcu.edu)
+2.	Enter your **eID** and **password** using **CAS** (Central Authentication Services).
+3.	The **T4 Site Manager** will launch.
+4.	Click your username in the top right corner to open your user profile.
+	1.	The default HTML editor is **TinyMCE**.
+	2.	Websites are called “Channels.”  Under your User Details, if you work on several websites, you can set a default website (channel).  You can use your default channel to preview content on your live website. 
 
-###Accordion
-This content type breaks up content into collapsable sections. A user can designate up to five sections. The accordion will span the entire width of the content area.
+##The interface
+The **Site Structure** screen is often the starting point when working with content.  To return to the **Site Structure screen**, do the following:
+*	Go to **Content** and select **Site Structure**.
+*	Click on **Site Structure** in the **header menu**.
+*	Click on the **T4 logo** in the top left corner.
 
-###CAS Authentication
-The CAS Authentication content type lets users designate a list of eIDs that are able to access the page and subpages via CAS authentication. To use this content type drop the CAS Authentication content type on the first page you want to authenticate and then fill in the users in the user field. Multiple users should be separated by single space. Note: this content type will not show up in the T4 preview screen, but will work once you publish out to the live site.
+To navigate between screens without losing data, **use T4 Site Manager's navigation (rather than your browser’s buttons)**. If you navigate away from a screen without saving your data first, you run the risk of losing your data.
 
-###Child Pages List
-This content type automatically pulls in the page meta from it's child pages and displays it in an orderly list. Only child pages with meta information will be included in the list. Users are given the option to add a image to this content type, it is suggested to establish a meta image default size. I used 90x90px as a good base point.
+If you’re not already on the **Site Structure** screen, click the **Site Structure** icon located in the top menu bar.
 
-###Content Well
-The Content Well content type moves HTML content into a colored div. The div has the option to be different colors and should be used to make average content stand out or show importance.
+T4 names the base of your website, **“Site Structure”** and it includes **sections (folders)** displayed with different symbols. **Sections** represent specific web pages. Within folders, you may encounter the following symbols: 
 
-###Jumbotron
-The Jumbotron content type displays a stylized div that can have content inside. The user can optionally set a photo background and custom text color to style how they would like. If a photo background is chosen it is suggested to apply a colored overlay in a photo editing program so the text is still readable. The example site uses a photo that has a #000000 (black) overlay with 50% opacity.
+##Direct Edit
 
-###News Headlines
-The News Headlines content type is used to pull in the latest 3 News Items from the News section into an unordered list. Users have the ability to add an optional heading on the top of the new items.
+###How to access Direct Edit
+The quickest way to begin adding and editing content to a webpage is to access **Direct Edit** by the following methods:
 
-###News Item
-The News Item content type is used to add news items to the News section. Users have the ability to add a News Title, News Excerpt, News Excerpt Thumbnail, News Date, and News Content. This content can be pulled in to other pages via other content types (i.e. News Headlines).
+####Method 1
+1.    From the **Site Structure**, select **Direct Edit** from the **Section Drop-Down Menu**:
+2.    A **Direct Edit** screen opens with a red dotted line surrounding content you have permission to edit. The **Direct Edit menu** is displayed at the top of the screen; use the orange toggle button to show/hide the **Direct Edit** menu.
 
-###Page Meta
-The Page Meta content type is a special content type that should be added on every page to define the page's purpose or teaser information. *Important to note, this content does not actually show up on the page it is added, but works in conjunction with the [Child Pages List](#child-pages-list) content type.*
+####Method 2
+You can access **Direct Edit** by clicking the **Pencil Icon** located in the footer of your website:
 
-###Photo Slideshow
-This content type gives the user the option to add up to ten photos into an interactive slideshow. The user has the option to toggle the carousel controls and indicator on/off, add captions for all the photos individually, and choose whether the photos fade or slide in and out.
+###How to add content to current page with Direct Edit
+In Direct Edit, a Page is considered the editable area on the page. A Page can consist of multiple pieces of content. Different types of content can be added to a page as required.
 
-###Random Image
-The Random Image content type gives users the ability to add an image that is randomized from an array of five possibilities.
-
-###Responsive Embed
-The Responsive Embed content type gives the user a place to embed an iframe video or media element (youtube, vimeo, etc.) into a dedicated responsive wrapper.
-
-###Slice
-A slice content type pulls in content from a hidden child section called "Slice". This is used to provide a full page colored div that separates content on the page. This content type can only be used on the homepage. An example is located on this homepage.
-
-###Tabs
-The Tabs content type gives the user the option to add HTML content into tabbed form. This content types allows up to five tabs.
-
-##Style Asset Content Types
-Style Asset Content Types should only be allowed in a hidden section called "Style_assets". These content types work to modify the entire template and the homepage feature.
-
-###Footer
-The Footer content type lets users designate HTML content for the bottom left of the footer. It also automatically includes the "Last Updated" slug and direct edit button.
-
-###Photo Slideshow
-If a Photo Slideshow component is added to the "Style_assets" section then it will be applied to the homepage. Suggested size for a homepage photo slideshow is at least 700x200px.
-
-###Site Title
-The Site Title content type lets users designate a primary logo (image), primary logo link, secondary title (text) and secondary title link in the top header of the site.
-
-###Social Media
-The Social Media content type lets users add icons for their social media presences. Currently this content type includes icons for Facebook Twitter, Instagram Youtube, Tumblr, Pinterest, Google Plus, LinkedIn, Vimeo and Wordpress.
-
-###VCU Branding Bar
-The VCU Branding Bar content type lets users change the color of the required VCU Branding. The options are gold, gray, white, or black. *Important to note, the branding footer that is applied when the site is viewed in mobile is always black.*
-
-
-##Layouts
-*	GBoot Home - Homepage for Generic Bootstrap
-*	GBoot Inner - Inner page for Generic Bootstrap
