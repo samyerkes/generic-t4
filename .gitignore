@@ -7,3 +7,4 @@ t4
 dist
 npm-debug.log
 .vagrant
+app/css/
