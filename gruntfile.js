@@ -18,7 +18,7 @@ module.exports = function(grunt) {
             },
             css: {
                 files: ['app/sass/**/*.sass', 'app/sass/**/*.scss'],
-                tasks: ['sass', 'autoprefixer', 'build']
+                tasks: ['sass', 'autoprefixer', 'useminPrepare', 'concat', 'cssmin', 'uglify', 'copy', 'usemin', 't4',  'watch']
             },
             images: {
                 files: ['app/imgs/*'],
@@ -40,7 +40,8 @@ module.exports = function(grunt) {
             },
             dist: {
                 files: {
-                    'app/css/global.css': 'app/sass/global.sass'
+                    'app/css/global.css': 'app/sass/global.sass',
+                    'app/css/print.css': 'app/sass/print.sass'
                 }
             }
         },
@@ -96,6 +97,7 @@ module.exports = function(grunt) {
                 dirs: ['dist']
             }
         },
+        
         copy: {
             jquery: {
                 expand: true,
@@ -118,7 +120,7 @@ module.exports = function(grunt) {
             t4CSS: {
                 expand: true,
                 cwd: 'dist/css/',
-                src: 'global.min.css',
+                src: '*',
                 dest: 't4/css/'
             },
             t4JS: {
@@ -176,18 +178,7 @@ module.exports = function(grunt) {
                     to: ''
                 }]
             }
-        },
-
-        webdav_sync: {
-            default: {
-                options: {
-                    local_path: 't4/css/**',
-                    remote_path: 'http://samyerkes:m00seVSbear:t4.vcu.edu/terminalfour/mlwebdav/Generic%20Bootstrap/css'
-                }
-            } 
-        }
-        
-                
+        }      
 
     });
     // load plugins

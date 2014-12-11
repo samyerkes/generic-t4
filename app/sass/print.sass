@@ -1,0 +1,15 @@
+@import "_colors"
+@import "_variables"
+@import "_mixins"
+@import "_extends"
+
+.header, footer, .carousel
+	display: none
+a
+	&:after
+		content: " ("attr(href) ") "
+
+//specific modules
+.jumbotron
+	border: 1px solid $font-color
+	border-radius: $pad-sm

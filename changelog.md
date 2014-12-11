@@ -1,5 +1,8 @@
 #T4 Generic Bootstrap Changelog
 
+December 11, 2014
+*	Added technical documentaion, added print.css, made minor edits to readme.md
+
 December 5, 2014
 *	Added Changelog
 
