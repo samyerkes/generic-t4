@@ -10,6 +10,8 @@ html
 body
 	margin: 0 0 ($pad+50px) //50px is to clear the sticky "make it real" footer
 	background: url('../imgs/header_bg.png')
+header
+	position: relative
 .wrap
 	margin: $pad auto $pad*3 //*3 is to clear the sticky "make it real" footer
 	width: 90%
@@ -23,3 +25,20 @@ img
 	padding: $pad
 .module-sm
 	padding: $pad-sm
+
+
+
+
+
+
+//color name, background, color for type, color for links
+$vcu-identities: (white, $vcu-identity-white, $font-color, $vcu-identity-gold), (black, $vcu-identity-black, $real_white, $vcu-identity-gold), (gray, $vcu-identity-gray, $real_white, $vcu-identity-gold), (gold, $vcu-identity-gold, $font-color, $vcu-identity-black)
+
+@each $identity, $background, $color, $links-color in $vcu-identities
+	.#{$identity}
+		background: #{$background} !important
+		border: none !important
+		a
+			color: $links-color !important
+		#{$typography}
+			color: $color !important

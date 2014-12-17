@@ -1,0 +1,26 @@
+---
+Color: gray
+SiteSearch: massey.vcu.edu
+Placeholder: Search
+---
+<form action="http://search.vcu.edu/search" method="get" role="form" class="form-inline search pull-right hidden-xs {{ search.Color }}">
+	<input type="hidden" name="proxystylesheet" value="default_frontend">
+  	<input type="hidden" name="sitesearch" value="{{ search.SiteSearch }}">
+
+	<div class="form-group">
+	    <div class="input-group">
+	      <label class="sr-only" for="search">{{ search.Placeholder }}</label>
+	      <input type="text" class="form-control input-sm" id="search" placeholder="{{ search.Placeholder }}">
+	    </div>
+	  </div>
+
+	<button type="submit" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+
+</form>
+
+
+
+
+
+
+
