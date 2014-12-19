@@ -1,9 +1,14 @@
 .header
-  h2
-    float: left
-    margin-top: $pad-sm
-    margin-left: $pad
-    @include font-size(2.5)
-  img
-    width: auto !important
-    height: auto !important
+	h2
+		float: left
+		margin-top: $pad-sm
+		margin-left: $pad
+		@include font-size(2.5)
+	a
+		color: $font-color
+		&:hover, &:focus
+			color: $real_black
+			text-decoration: none
+	img
+		width: auto !important
+		height: auto !important

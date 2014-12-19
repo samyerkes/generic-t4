@@ -28,8 +28,6 @@
     "grunt-wiredep": "latest"
   },
   "dependencies": {
-    "assemble": "^0.4.42",
-    "grunt-assemble": "^0.1.15",
-    "grunt-contrib-imagemin": "git://github.com/gruntjs/grunt-contrib-imagemin"
+    "grunt-contrib-imagemin": "^0.9.2"
   }
 }

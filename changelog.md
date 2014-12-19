@@ -1,5 +1,8 @@
 #T4 Generic Bootstrap Changelog
 
+December 19, 2014
+*	Changed site title link color, width of general content when on homepage, added parent orgs in footer
+
 December 11, 2014
 *	Added technical documentaion, added print.css, made minor edits to readme.md
 
