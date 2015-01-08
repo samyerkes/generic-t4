@@ -18,7 +18,7 @@ module.exports = function(grunt) {
             },
             css: {
                 files: ['app/sass/**/*.sass', 'app/sass/**/*.scss'],
-                tasks: ['sass', 'autoprefixer', 'useminPrepare', 'concat', 'cssmin', 'uglify', 'copy', 'usemin', 't4',  'watch']
+                tasks: ['sass', 'autoprefixer', 'useminPrepare', 'concat', 'cssmin', 'uglify', 'copy', 'usemin', 't4']
             },
             images: {
                 files: ['app/imgs/*'],
@@ -41,6 +41,7 @@ module.exports = function(grunt) {
             dist: {
                 files: {
                     'app/css/global.css': 'app/sass/global.sass',
+                    'app/css/theme.css': 'app/sass/theme.sass',
                     'app/css/print.css': 'app/sass/print.sass'
                 }
             }

@@ -47,6 +47,7 @@
 	*	[Publish Section](#publish-section)
 	*	[Publish Branch](#publish-branch)
 *	[How to undo deleted Content and Pages](#how-to-undo-deleted-content-and-pages)
+*	[How to override your themes global styles](#how-to-override-your-themes-global-styles)
 *	[Global header and footer](#header-and-footer)
 	*	[How to change the header and footer](#how-to-change-the-header-and-footer)
 	*	[Header and footer requirements](#header-and-footer-requirements)
@@ -56,6 +57,8 @@
 *	[Content types](#content-types)
 	*	[2 Columns](#2-columns)
 	*	[2 Column Pull](#2-column-pull)
+	*	[2 Column Offset(84/48)](#2-column-offset)
+	*	[2 Column Offset(84/48) Pull](#2-column-offset-pull)
 	*	[3 Columns](#3-columns)
 	*	[3 Column Pull](#3-columns-pull)
 	*	[Accordion](#accordion)
@@ -328,6 +331,9 @@ In the yellow action menu next to the piece of content, click Modify.
 
 You will be taken into edit mode, choose **Update and Approve** at the top to bring the content out of delete status. 
 
+##How to override your themes global styles
+The Generic T4 template comes with a way to override some of its base CSS styles. This functionality gives the user a way to still be under the template but have a unique look. To modify the global styles, locate the **Assets-Style** section and modify the **GBoot Global Styles** content type. Most of these fields accept web safe colors, hex values or pixel values (px).
+
 ##Global header and footer
 Content added to the Header or Footer will show up globally on every page throughout your site. 
 
@@ -371,6 +377,12 @@ The 2 Columns content type creates two columns of content using the HTML WYSIWYG
 
 ###2 Column Pull
 The 2 Columns Pull content type pulls in the content from hidden child sections called "Column_1", and "Column_2". This way you can reuse any special components and add them into a specific column. It also gives you the ability to add optional headings for those columns.
+
+###2 Columns Offset (84/48)
+The Columns 2-84 and Columns 2-48 content types create two columns of content using the HTML WYSIWYG editor for both columns. One column is twice as big as the other creating an offset effect. 84 corresponds to the left side being 8 grids wide and right side being 4 grids wide; while the opposite is true for 48. It also gives you the ability to add optional headings for those columns.
+
+###2 Columns Offset (84/48) Pull
+The Columns 2-84 and Columns 2-48 content types create two columns of content by pulling in the content from hidden child sections called "Column_1", and "Column_2". This way you can reuse any special components and add them into a specific column. One column is twice as big as the other creating an offset effect. 84 corresponds to the left side being 8 grids wide and right side being 4 grids wide; while the opposite is true for 48. It also gives you the ability to add optional headings for those columns.
 
 ###3 Columns
 The 3 Columns content type creates two columns of content using the HTML WYSIWYG editor for all three columns. It also gives you the ability to add optional headings for those columns.

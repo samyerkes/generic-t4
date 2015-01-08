@@ -15,6 +15,9 @@
     <!-- endbower -->
     <link rel="stylesheet" href="../css/global.css">
     <!-- endbuild -->
+    <!-- build:css css/theme.min.css -->
+    <link rel="stylesheet" href="../css/theme.css">
+    <!-- endbuild -->
     <!-- build:css css/print.min.css -->
     <link rel="stylesheet" href="../css/print.css" media="print">
     <!-- endbuild -->
@@ -24,21 +27,16 @@
 </head>
 
 <body class="home">
-        {{> vcu-identity }}
-    <header>
+    {{> vcu-identity }}
 
-        {{> search }}
+    {{> search }}
 
-        {{> site-title }}
+    {{> site-title }}
 
-        {{> nav-main }}
-
-    </header>
-    
+    {{> nav-main }}
         
     {{> body }} 
-
-
+    
     <footer>
         {{> 2-columns }}
    
