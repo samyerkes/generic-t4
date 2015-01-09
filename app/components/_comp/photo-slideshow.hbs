@@ -16,14 +16,12 @@ Image-3-Caption: Third caption
 <div class="content container">
 <div id="carousel-example-generic" class="carousel slide {{ photo-slideshow.Fade-Slide }}" data-ride="carousel">
     
-    {{#is photo-slideshow.Carousel-Indicators true }}
     <!-- Indicators -->
     <ol class="carousel-indicators">
         <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
         <li data-target="#carousel-example-generic" data-slide-to="1"></li>
         <li data-target="#carousel-example-generic" data-slide-to="2"></li>
     </ol>
-    {{/is}}
 
     <!-- Wrapper for slides -->
     <div class="carousel-inner">
@@ -47,7 +45,6 @@ Image-3-Caption: Third caption
         </div>
     </div>
 
-    {{#is photo-slideshow.Carousel-Controls true }}
     <!-- Controls -->
     <div>
         <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
@@ -57,7 +54,6 @@ Image-3-Caption: Third caption
             <span class="glyphicon glyphicon-chevron-right"></span>
         </a>
     </div>
-    {{/is}}
 
 </div>
 </div>

@@ -1,0 +1,71 @@
+.content .carousel, form
+	margin-bottom: $pad
+.carousel-caption
+	left: 0
+	right: 0
+	bottom: 0
+	padding: $pad
+	text-align: left
+	width: 100%
+	background: rgba($real_black, .7)
+	@media screen and (max-width: $babybear)
+		position: relative
+		padding: $pad-sm
+		background: $black
+
+.carousel-fade
+	.carousel-inner
+		.item 
+			opacity: 0
+			transition-property: opacity
+		.active 
+			opacity: 1
+		.active.left, .active.right 
+			z-index: 1
+			left: 0
+			opacity: 0
+		.next.left, .prev.right
+			opacity: 1
+		.carousel-control
+			z-index: 2
+
+//homepage carousel
+.carousel--wrap
+	padding: 0
+	&.content.container
+		padding-bottom: 0
+		.carousel
+			margin-bottom: 0
+.full, .carousel--wrap
+	.carousel-caption
+		max-width: 25%
+		height: auto
+		top: auto
+		right: auto
+		bottom: auto
+		left: auto
+		p 
+			@include font-size(.8)
+		.container
+			width: auto
+		@media screen and (max-width: $mamabear)
+			position: relative
+			bottom: 0 !important
+			left: 0 !important
+			max-width: 100%
+			padding: $pad-sm
+			background: $black
+			.container
+				max-width: 750px
+		&.top-left
+			top: 5%
+			left: 12%
+		&.top-right
+			top: 5%
+			right: 12%
+		&.bottom-right
+			bottom: 5%
+			right: 12%
+		&.bottom-left
+			bottom: 5%
+			left: 12%
