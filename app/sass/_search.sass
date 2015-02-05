@@ -1,6 +1,13 @@
-.search
-	display: block
-	height: auto
-	padding: $pad-sm
-	border-radius: 0 0 0 $pad-sm  
-	background: $vcu-identity
+.search-container
+	background: darken($vcu-identity, 10%)
+	transition: .5s height
+	overflow: hidden
+	height: 0
+	&.active
+		height: auto
+.navbar-header .search-toggle
+	margin-left: 15px
+	padding: 9px 10px
+	margin-top: 4px
+	margin-bottom: 4px
+	border-radius: 4px

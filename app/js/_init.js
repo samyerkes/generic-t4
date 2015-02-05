@@ -19,3 +19,17 @@ $(document).ready(function () {
     }(jQuery));
 
 });
+
+$(document).ready(function(){
+
+    var searchBtn = $('.search-toggle');
+    var search = $('.search-container');
+
+    $(search).removeClass('active');
+
+    $(searchBtn).click(function(e) {
+        e.preventDefault();
+        $(search).toggleClass('active');
+    })
+
+});
