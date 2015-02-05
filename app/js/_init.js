@@ -9,8 +9,8 @@ $(document).ready(function () {
         $('#filter').keyup(function () {
 
             var rex = new RegExp($(this).val(), 'i');
-            $('.searchable tr').hide();
-            $('.searchable tr').filter(function () {
+            $('.searchable .listing').hide();
+            $('.searchable .listing').filter(function () {
                 return rex.test($(this).text());
             }).show();
 
