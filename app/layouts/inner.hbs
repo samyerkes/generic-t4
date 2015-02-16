@@ -7,6 +7,9 @@
 
     <title>Generic T4 - Virginia Commonwealth University</title>
 
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
     <!-- build:css css/global.min.css -->
     <!-- bower:css -->
     <link rel="stylesheet" href="../../bower_components/bootstrap-sass/dist/css/bootstrap.css" />
@@ -27,6 +30,7 @@
 </head>
 
 <body class="inner">
+    <a href="#content" class="sr-only">Skip to content</a>
     {{> vcu-identity }}
 
     {{> site-title }}
@@ -35,17 +39,21 @@
 
     <div class="container content">
         <div class="row">
-            <div class="col-md-9 col-md-push-3">
-                {{> breadcrumbs }}
-
-                {{> body }} 
-
-            </div>
-            <div class="sidebar col-md-3 col-md-pull-9 hidden-xs hidden-sm">
-                
-                {{> sidebar-nav }} 
-
-            </div>
+            <a name="content" class="sr-only">Main Content</a>
+            <main role="main">
+                <div class="col-md-9 col-md-push-3">
+                    {{> breadcrumbs }}
+                    <article>
+                        {{> body }}     
+                    </article>
+                </div>
+                <aside>
+                    <div class="sidebar col-md-3 col-md-pull-9 hidden-xs hidden-sm">
+                        {{> sidebar-nav }} 
+                    </div>    
+                </aside>
+            </main>
+            
         </div>
     </div>
 
@@ -56,7 +64,13 @@
 
         {{> footer }}
 
-            <p>Last Updated: 09/11/2014 <a href="#" class="t4Edit-page">Edit</a></p>
+            <p>Last Updated: 09/11/2014 <a href="#" class="t4Edit-page">Edit</a><br />
+            
+            <script>
+            document.write('<a href="http://ts.vcu.edu/cgi-bin/posh.pl?posh_referer=' + document.URL + '" alt="View text version">View text version</a>')
+            </script>
+
+            </p>
             </div>
         </div>
     </div>

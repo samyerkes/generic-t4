@@ -1,0 +1,34 @@
+---
+Staff-First-Name: Sam
+Staff-Middle-Initial: W
+Staff-Last-Name: Yerkes
+Staff-Title: Webmaster
+Staff-Email: syerkes@vcu.edu
+Staff-Phone: (804) 827-0067
+Staff-Image-Tn: http://placehold.it/150x150/56a5eb/ffffff/&text=150x150px
+---
+<div class="staff searchable">
+	<div class="media listing">
+	    <a class="pull-left" href="#">
+	        <img class="media-object img-thumbnail" src="{{ staff-media-listing.Staff-Image-Tn }}" alt="...">
+	    </a>
+	    <div class="media-body">
+	        <h4 class="media-heading"><a href="#">{{ staff-media-listing.Staff-First-Name }} {{ staff-media-listing.Staff-Middle-Initial }}. {{ staff-media-listing.Staff-Last-Name }}</a></h4>
+	        <p>{{ staff-media-listing.Staff-Title }}<br />
+	        	{{ staff-media-listing.Staff-Email }}<br />
+	        	{{ staff-media-listing.Staff-Phone }}</p>
+	    </div>
+	</div>
+
+	<div class="media listing">
+	    <a class="pull-left" href="#">
+	        <img class="media-object img-thumbnail" src="{{ staff-media-listing.Staff-Image-Tn }}" alt="...">
+	    </a>
+	    <div class="media-body">
+	        <h4 class="media-heading">Heading</h4>
+	         <p>{{ staff-media-listing.Staff-Title }}<br />
+	        	{{ staff-media-listing.Staff-Email }}<br />
+	        	{{ staff-media-listing.Staff-Phone }}</p>
+	    </div>
+	</div>	
+</div>

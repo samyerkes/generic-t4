@@ -111,6 +111,12 @@ ul.media-list
   .container &
     margin: $pad 0
 
+.media-body
+  p
+    @include font-size(.8)
+    @media screen and (max-width: $babybear)
+      @include font-size(1)
+
 .slice
   background: $vcu-identity
   .content
