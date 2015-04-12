@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="no-js">
 
 <head>
     <meta charset="UTF-8">
@@ -30,55 +30,60 @@
 </head>
 
 <body class="home">
-    {{> vcu-identity }}
+    <div>
+        {{> vcu-identity }}
 
-    {{> site-title }}
+        {{> site-title }}
 
-    {{> nav-main }}
+        {{> nav-main-dropdown }}
+            
+        {{> body }} 
         
-    {{> body }} 
-    
-    <footer>
-        {{> 2-columns }}
-   
-        {{> social-media }}
+        <footer>
+            {{> 2-columns }}
+       
+            {{> social-media }}
 
-        {{> footer }}
+            {{> footer }}
 
-            <p>Last Updated: 09/11/2014 <a href="#" class="t4Edit-page">Edit</a></p>
+                <p>Last Updated: 09/11/2014 <a href="#" class="t4Edit-page">Edit</a></p>
+                </div>
             </div>
         </div>
+                                    
+        </footer>
+
+        <div id='realLogo'>
+            <header>
+                <h1><a href='http://www.makeitreal.vcu.edu' target='_blank' title='VCU Make it real.'>Make it real.</a>
+                </h1>
+                <h2><a href='http://www.vcu.edu' target='_blank' title='Virginia Commonwealth University'>Virginia Commonwealth University</a>
+                </h2>
+            </header>
+        </div>
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <script src="../bower_components/jquery/dist/jquery.js"></script>
+        <!-- build:js js/global.min.js -->
+        <!-- bower:js -->
+        <script src="../../bower_components/modernizr/modernizr.js"></script>
+        <script src="../../bower_components/bootstrap-sass/dist/js/bootstrap.js"></script>
+        <script src="../../bower_components/picturefill/dist/picturefill.js"></script>
+        <script src="../../bower_components/respond/dest/respond.src.js"></script>
+        <script src="../../bower_components/fitvids/jquery.fitvids.js"></script>
+        <!-- endbower -->
+        <script href="../js/_mmenu.min.js"></script>
+        <script href="../js/_mmenu.header.min.js"></script>
+        <script href="../js/_init.js"></script>
+        <!-- endbuild -->
+
+        {{> google-analytics }}
+
+        <!--REMOVE BEFORE PRODUCTION -->
+        <script src="http://localhost:35729/livereload.js"></script>
+        <!--REMOVE BEFORE PRODUCTION -->
+
     </div>
-                                
-    </footer>
-
-    <div id='realLogo'>
-        <header>
-            <h1><a href='http://www.makeitreal.vcu.edu' target='_blank' title='VCU Make it real.'>Make it real.</a>
-            </h1>
-            <h2><a href='http://www.vcu.edu' target='_blank' title='Virginia Commonwealth University'>Virginia Commonwealth University</a>
-            </h2>
-        </header>
-    </div>
-
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <script src="../bower_components/jquery/dist/jquery.js"></script>
-    <!-- build:js js/global.min.js -->
-    <!-- bower:js -->
-    <script src="../../bower_components/modernizr/modernizr.js"></script>
-    <script src="../../bower_components/bootstrap-sass/dist/js/bootstrap.js"></script>
-    <script src="../../bower_components/picturefill/dist/picturefill.js"></script>
-    <script src="../../bower_components/respond/dest/respond.src.js"></script>
-    <script src="../../bower_components/fitvids/jquery.fitvids.js"></script>
-    <!-- endbower -->
-    <script href="../js/_init.js"></script>
-    <!-- endbuild -->
-
-    {{> google-analytics }}
-
-    <!--REMOVE BEFORE PRODUCTION -->
-    <script src="http://localhost:35729/livereload.js"></script>
-    <!--REMOVE BEFORE PRODUCTION -->
 </body>
 
 </html>

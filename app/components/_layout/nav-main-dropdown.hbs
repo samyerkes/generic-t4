@@ -1,0 +1,101 @@
+---
+---
+
+<nav id="mobile-nav">
+  <ul class="nav navbar-nav">
+    <li><a href="#">Home</a></li>
+    <li class="active"><a href="inner.html">About</a>
+      <ul>
+        <li><a href="#">Test</a></li>
+        <li><a href="#">Test 2</a></li>
+      </ul>
+    </li>
+    <li><a href="#">Academic Affairs</a>
+      <ul>
+        <li><a href="#">Lorem Ipsum</a></li>
+        <li><a href="#">Lorem Ipsum</a>
+          <ul>
+            <li><a href="#">Lorem Ipsum</a></li>
+            <li><a href="#">Lorem Ipsum</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Lorem Ipsum</a></li>
+        <li><a href="#">Lorem Ipsum</a></li>
+      </ul>
+    </li>
+    <li class="mobile-search">
+      <form action="http://search.vcu.edu/search" method="get">
+          <input type="hidden" name="proxystylesheet" value="default_frontend">
+          <input type="hidden" name="sitesearch" value="www.massey.vcu.edu">
+
+          <div class="form-group">
+              <label class="sr-only" for="q">Search</label>
+              <input type="text" class="form-control" name="q" placeholder="Search" value="Search" onfocus="this.value='';">
+          </div>
+          <button type="submit" class="btn btn-block btn-default">Submit</button>
+      </form> 
+    </li>
+  </ul>
+</nav>
+
+<nav id="main-nav" class="navbar navbar-default" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <a type="button" class="navbar-toggle collapsed" href="#mobile-nav">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </a>
+    </div>
+    <div class="nav-links">
+      <ul class="hidden-xs nav navbar-nav navbar-right">
+          <li>
+              <a href="#" class="search-toggle">
+                  <span class="glyphicon glyphicon-search" aria-hidden="true"></span>    
+              </a>
+          </li>
+      </ul>
+      <div class="nav-align-center">
+        <ul class="nav navbar-nav">
+          <li><a href="#">Home</a></li>
+          <li class="active"><a href="inner.html">About</a>
+            <ul>
+              <li><a href="#">Test</a></li>
+              <li><a href="#">Test 2</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Academic Affairs</a>
+            <ul>
+              <li><a href="#">Lorem Ipsum</a></li>
+              <li><a href="#">Lorem Ipsum</a>
+                <ul>
+                  <li><a href="#">Lorem Ipsum</a></li>
+                  <li><a href="#">Lorem Ipsum</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Lorem Ipsum</a></li>
+              <li><a href="#">Lorem Ipsum</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>
+</nav>
+
+<div class="search-container active">
+    <div class="container">
+        <form class="navbar-form navbar-right" action="http://search.vcu.edu/search" method="get">
+            <input type="hidden" name="proxystylesheet" value="default_frontend">
+            <input type="hidden" name="sitesearch" value="www.massey.vcu.edu">
+
+            <div class="form-group">
+                <label class="sr-only" for="q">Search</label>
+                <input type="text" class="form-control" name="q" placeholder="Search" value="Search" onfocus="this.value='';">
+            </div>
+            <button type="submit" class="btn btn-default">Submit</button>
+        </form> 
+    </div>
+</div>

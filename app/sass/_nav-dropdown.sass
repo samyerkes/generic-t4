@@ -1,0 +1,75 @@
+.navbar-default .navbar-nav li
+  position: relative
+  ul
+    position: absolute
+    left: -99999px
+    width: 14em
+    z-index: 999
+    padding: 0
+    border: none
+    li
+      display: block
+      width: 100%
+      border: none
+      a
+        width: 100%
+        text-align: left
+        display: inline-block
+        padding: 0.5em
+        border: none
+  &:hover
+    a
+      background-color: darken($vcu-identity, 2%)
+      color: $black
+    > ul
+      left: 0
+      right: auto
+      top: 100%
+      background-color: darken($vcu-identity, 2%)
+      li
+        a:hover
+          color: $black
+          background-color: darken($vcu-identity, 5%)
+          text-decoration: none
+        &:hover
+          a
+            color: #105b63
+            background-color: $white
+          > ul
+            background-color: $white
+            top: 0
+            left: 100%
+            right: auto
+          li a
+
+            &:hover
+              color: #f7f7f6
+              background-color: darken($vcu-identity, 5%)
+
+//Start Mobile Nav
+
+.mm-list > li > a
+  white-space: normal
+  text-overflow: initial
+
+@media screen and (max-width: 768px)
+  .js #main-nav .nav-links
+    display: none
+
+@media screen and (min-width: 768px)
+  #mobile-nav
+    display: none !important
+
+#mobile-nav .mm-list li
+  a
+    color: #f7f7f6
+    &:hover
+      background-color: $vcu-identity
+      color: #f7f7f6
+  .mm-subopen
+    &:after
+      border-color: $vcu-identity
+    &:hover:after
+      border-color: #f7f7f6
+
+// End Mobile Nav
