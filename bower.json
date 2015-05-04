@@ -6,9 +6,12 @@
     "modernizr": "latest",
     "normalize-css": "latest",
     "picturefill": "latest",
-    "jquery": "latest",
+    "jquery": "~1",
     "font-awesome": "~4.2.0",
     "respond": "~1.4.2",
     "fitvids": "~1.1.0"
+  },
+  "devDependencies": {
+    "html5shiv": "~3.7.2"
   }
 }

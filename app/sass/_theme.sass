@@ -1,16 +1,16 @@
-/*body font*/
+/* body font */
 html
 	font-size: 18px
 body
 	background: yellow
 
-/*typography*/
+/* typography */
 a
 	color: #c1272d
 	&:focus, &:hover
 		color: #971e23
 
-/*header*/
+/* header */
 header.site--title
 	background: url(http://subtlepatterns.com/patterns/footer_lodyas.png)
 .header a
@@ -18,7 +18,7 @@ header.site--title
 	&:hover, &:focus
 		color: #333333
 
-/*navbar*/
+/* navbar */
 .navbar
 	background: #f8f8f8
 	border-color: #333333
@@ -27,11 +27,26 @@ header.site--title
 		&:last-child
 			border-color: #333333
 
-/*search bar*/
+/* navbar - dropdown */
+.navbar li:hover
+	background-color: yellow
+.navbar-default .navbar-nav li:hover a
+	background-color: purple
+.navbar-default .navbar-nav li:hover>ul li:hover a
+	background-color: blue
+.navbar-default .navbar-nav li:hover > ul li:hover li a:hover
+	background-color: aqua
+#mobile-nav .mm-list li a:hover
+	background-color: green
+#mobile-nav .mm-list li .mm-subopen:after
+	border-color: navy
+
+
+/* search bar */
 .search-container
 	background: pink
 
-/*footer*/
+/* footer */
 footer
 	background: red
 	h1, h2, h3, h4, h5, h6, p, small
@@ -41,6 +56,6 @@ footer
 		&:hover, &:focus
 			color: orange
 
-/*slice*/
+/* slice */
 .slice, .slice .content
 	background: pink
